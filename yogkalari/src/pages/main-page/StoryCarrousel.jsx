@@ -5,7 +5,7 @@ const StoryCarousel = () => {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1514961013546-6a8d5ed7f1e9?w=400&h=400&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face",
       title: "Story 1",
     },
     {
