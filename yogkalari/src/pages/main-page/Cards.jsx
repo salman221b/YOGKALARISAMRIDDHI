@@ -35,6 +35,7 @@ const Cards = () => {
 
   return (
     <div className="flex flex-col items-center justify-center py-10 px-5 bg-[#F7F3EB]">
+        <p className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#2F5C4E]">Sanctuary for Reconnection</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl w-full">
         {cards.map((card) => (
           <div
