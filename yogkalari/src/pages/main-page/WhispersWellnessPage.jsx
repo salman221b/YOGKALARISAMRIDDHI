@@ -61,8 +61,8 @@ const WhispersWellnessPage = () => {
           <p className="text-lg md:text-xl text-green-100 mb-10 max-w-2xl mx-auto">
             Let's help you find balance through body, breath, and earth
           </p>
-          
-          <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-[#2F5C4E] transition-all duration-300 hover:scale-105 hover:shadow-lg">
+
+          <button className="bg-transparent border-2 border-[#F5F2EB] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#F5F2EB] hover:text-[#2F5C4E] transition-all duration-300 hover:scale-105 hover:shadow-lg">
             Book a Call
           </button>
         </div>
