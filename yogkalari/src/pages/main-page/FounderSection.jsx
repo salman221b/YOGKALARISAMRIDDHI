@@ -7,7 +7,7 @@ const FounderSection = () => {
       <div className="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-b from-[#F5F2EB] to-[#F0EDE6] opacity-40 rounded-b-[50%] group-hover:opacity-100 group-hover:rounded-b-none group-hover:bg-gradient-to-br group-hover:from-[#E8F4FD] group-hover:via-[#F0F8FF] group-hover:to-[#F8FAFC] transition-all duration-700 ease-in-out -z-10 shadow-sm group-hover:shadow-lg"></div>
 
       {/* Title */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-green-900 mb-12 z-10 group-hover:text-green-800 transition-colors duration-500">
+      <h2 className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#2F5C4E]">
         Meet the Founders
       </h2>
 

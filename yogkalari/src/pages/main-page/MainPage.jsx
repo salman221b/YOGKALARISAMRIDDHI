@@ -4,6 +4,8 @@ import StoryCarousel from './StoryCarrousel'
 import Cards from './Cards'
 import FounderSection from './FounderSection'
 import Marquee from './Marquee'
+import WhispersWellnessPage from './WhispersWellnessPage'
+
 
 const MainPage = () => {
   return (
@@ -13,6 +15,8 @@ const MainPage = () => {
       <Cards/>
       <FounderSection/>
       <Marquee/>
+      <WhispersWellnessPage/>
+      
     </div>
   )
 }
