@@ -1,68 +1,71 @@
 import React from "react";
 
-const FounderSection = () => {
-  return (
-    <div className="relative flex flex-col items-center py-20 px-6 group">
-      {/* Background Arch that transforms to rectangle on hover */}
-      <div className="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-b from-[#F5F2EB] to-[#F0EDE6] opacity-40 rounded-b-[50%] group-hover:opacity-100 group-hover:rounded-b-none group-hover:bg-gradient-to-br group-hover:from-[#E8F4FD] group-hover:via-[#F0F8FF] group-hover:to-[#F8FAFC] transition-all duration-700 ease-in-out -z-10 shadow-sm group-hover:shadow-lg"></div>
+const founders = [
+  {
+    name: "Sachin Gurukkal",
+    image:
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=600&fit=crop&crop=face",
+    description:
+      "Sachin Gurukkal is a lineage-trained Kalaripayattu teacher with 15 years’ teaching. He leads adults and kids through flowing Kalari that builds strength, agility, focus and humility. Grounded and safe, his training honors tradition while meeting modern bodies—cultivating courage, discipline and quiet power.",
+  },
+  {
+    name: "Another Founder",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face",
+    description:
+      "Another Founder is passionate about holistic living, teaching techniques to maintain balance and wellness in life. Her sessions blend mindfulness, fitness, and self-awareness for personal growth.",
+  },
+];
 
-      {/* Title */}
-      <h2 className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#2F5C4E]">
+const FounderCards = () => {
+  return (
+    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center py-12 px-6">
+      <h2 className="text-3xl font-semibold text-green-900 mb-10 text-center">
         Meet the Founders
       </h2>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl w-full z-10">
-        {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-500 group-hover:shadow-2xl">
-          <img
-            src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?auto=format&fit=crop&w=800&q=80"
-            alt="Founder 1"
-            className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
-          />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-green-800 transition-colors duration-300">
-              Sachin Gurukkal
-            </h3>
-            <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-              Sachin Gurukkal is a lineage-trained Kalaripayattu teacher with 15 years' teaching.
-              He leads adults and kids through flowing Kalari that builds strength, agility, focus, and humility.
-            </p>
-            <a
-              href="#"
-              className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline transition-all duration-300"
-            >
-              Know More →
-            </a>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl w-full">
+        {founders.map((founder, index) => (
+          <div
+            key={index}
+            className="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.03]"
+          >
+            {/* Founder Image */}
+            <div className="overflow-hidden">
+              <img
+                src={founder.image}
+                alt={founder.name}
+                className="w-full h-72 object-cover transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105 "
+              />
+            </div>
 
-        {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-500 group-hover:shadow-2xl">
-          <img
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
-            alt="Founder 2"
-            className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
-          />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-green-800 transition-colors duration-300">
-              Sucheta Chadha
-            </h3>
-            <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-              Sucheta is a yoga therapist who helps people come home to their bodies.
-              With 13+ years of one-to-one work, she supports women's health, pain, burnout, stress, and recovery.
-            </p>
-            <a
-              href="#"
-              className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium hover:underline transition-all duration-300"
-            >
-              Know More →
-            </a>
+            {/* Content (Before Hover) */}
+            <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">
+                {founder.name}
+              </h3>
+              <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                {founder.description}
+              </p>
+              <button className="mt-3 text-green-700 font-medium hover:underline">
+                Know More
+              </button>
+            </div>
+
+            {/* Hover Overlay */}
+            <div className="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
+              <h3 className="text-white text-lg font-semibold">
+                {founder.name}
+              </h3>
+              <button className="mt-3 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+                Know more
+              </button>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default FounderSection;
+export default FounderCards;

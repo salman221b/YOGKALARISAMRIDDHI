@@ -60,12 +60,6 @@ const StoryCarousel = () => {
     setCurrentIndex((prev) => (prev + 1) % stories.length);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? stories.length - 1 : prev - 1
-    );
-  };
-
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
@@ -84,7 +78,6 @@ const StoryCarousel = () => {
         transform: `translateX(${normalizedDiff > 0 ? "400px" : "-400px"}) scale(0)`,
         zIndex: 0,
         opacity: 0,
-        filter: "grayscale(100%)",
       };
     }
 
@@ -101,7 +94,6 @@ const StoryCarousel = () => {
         transform: `translateX(0px) translateY(0px) scale(${isMobile ? 1.1 : 1.3})`,
         zIndex: 10,
         opacity: 1,
-        filter: "none",
       };
     }
 
@@ -134,7 +126,6 @@ const StoryCarousel = () => {
       transform: `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`,
       zIndex: 10 - absDistance,
       opacity,
-      filter: "grayscale(100%)",
     };
   };
 
@@ -143,35 +134,27 @@ const StoryCarousel = () => {
       <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden px-2 sm:px-4">
         {/* Carousel Container */}
         <div className="relative w-full h-full flex items-center justify-center">
-          {stories.map((story, index) => (
-            <div
-              key={story.id}
-              className="absolute transition-all duration-700 ease-in-out cursor-pointer"
-              style={getItemPosition(index)}
-              onClick={() => goToSlide(index)}
-            >
-              <img
-                src={story.image}
-                alt={`Story ${index + 1}`}
-                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-44 xl:h-44 rounded-[60px] object-cover shadow-2xl"
-              />
-            </div>
-          ))}
-        </div>
+          {stories.map((story, index) => {
+            const isActive = index === currentIndex;
 
-        {/* Prev & Next Buttons */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-gray-700 font-bold"
-        >
-          ‹
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-gray-700 font-bold"
-        >
-          ›
-        </button>
+            return (
+              <div
+                key={story.id}
+                className="absolute transition-all duration-700 ease-in-out cursor-pointer group"
+                style={getItemPosition(index)}
+                onClick={() => goToSlide(index)}
+              >
+                <img
+                  src={story.image}
+                  alt={`Story ${index + 1}`}
+                  className={`w-20 h-20 sm:w-30 sm:h-33 md:w-40 md:h-50 lg:w-45 lg:h-55 xl:w-55 xl:h-65 rounded-[60px] object-cover shadow-2xl transition-all duration-300 ${
+                    isActive ? "grayscale-0" : "grayscale group-hover:grayscale-0"
+                  }`}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
