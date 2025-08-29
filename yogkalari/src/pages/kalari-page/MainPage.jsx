@@ -1,11 +1,21 @@
 import React from 'react'
 import Hero from './Hero'
+import About from './About'
 import './Hero.css'
+import Offerings from './Offerings'
+import Trainer from './Trainer'
+import BenefitsSection from './BenefitsSection'
+import MarqueeBanner from './MarqueeBanner'
 
 const MainPage = () => {
   return (
     <div>
       <Hero />
+      <About />
+      <Offerings/>
+      <Trainer/>
+      <BenefitsSection/>
+      <MarqueeBanner/>
     </div>
   )
 }
