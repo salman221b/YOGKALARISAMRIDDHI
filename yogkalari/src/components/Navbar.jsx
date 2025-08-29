@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white fixed w-full z-20 bg-[rgba(246,243,235,0.7)]">
+    <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235,0.7)]">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         <div className="flex justify-between items-center h-16">
 
