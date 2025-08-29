@@ -4,7 +4,7 @@ const WhispersWellnessPage = () => {
   return (
     <div className=" bg-[#F5F2EB]">
       {/* Top Section with Testimonials */}
-      <div className="py-20 px-6">
+      <div className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h1 className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#2F5C4E] text-center">

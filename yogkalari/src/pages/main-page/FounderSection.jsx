@@ -19,23 +19,23 @@ const founders = [
 
 const FounderCards = () => {
   return (
-    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center py-12 px-6">
+    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center mb-10 px-6">
       <h2 className="text-3xl font-semibold text-green-900 mb-10 text-center">
         Meet the Founders
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 max-w-4xl w-full">
         {founders.map((founder, index) => (
           <div
             key={index}
             className="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.03]"
           >
             {/* Founder Image */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden group-hover:h-full">
               <img
                 src={founder.image}
                 alt={founder.name}
-                className="w-full h-72 object-cover transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105 "
+                className="w-full h-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105 "
               />
             </div>
 
@@ -53,7 +53,7 @@ const FounderCards = () => {
             </div>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
+            <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
               <h3 className="text-white text-lg font-semibold">
                 {founder.name}
               </h3>

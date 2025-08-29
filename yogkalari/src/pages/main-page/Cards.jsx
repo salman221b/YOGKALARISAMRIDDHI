@@ -7,12 +7,7 @@ const cards = [
     description:
       "Traditional yoga for real-life healing. Breath, gentle movement and deep rest ease pain, steady hormones and calm a wired mind. Tailored one-to-one care—quiet, attentive, effective—for women navigating burnout, cycles and stress. Private sessions and select workplace programs for those who value depth over trends.",
     image:
-              "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=400",
-
-        
-
-       
-
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=400",
   },
   {
     title: "Samriddhi Terrariums",
@@ -33,7 +28,7 @@ const cards = [
 
 const ServiceCards = () => {
   return (
-    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center py-12 px-6">
+    <div className="bg-[#f8f5eb] flex flex-col items-center mb-20 px-6">
       <h2 className="text-3xl font-semibold text-green-900 mb-10 text-center">
         Sanctuary for Reconnection
       </h2>
@@ -45,11 +40,11 @@ const ServiceCards = () => {
             className="group relative bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl"
           >
             {/* Image */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden group-hover:h-full">
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-72 object-cover rounded-t-2xl transition-all duration-700 ease-in-out grayscale group-hover:grayscale-0 group-hover:h-full"
+                className="w-full h-full object-cover rounded-t-2xl transition-all duration-700 ease-in-out grayscale group-hover:grayscale-0 group-hover:h-full"
               />
             </div>
 
@@ -65,7 +60,7 @@ const ServiceCards = () => {
             </div>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
+            <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
               <h3 className="text-white text-lg font-semibold">{card.title}</h3>
               <p className="text-white text-sm mt-1">{card.subtitle}</p>
               <button className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
