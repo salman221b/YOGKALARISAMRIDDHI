@@ -1,22 +1,20 @@
 import React from "react";
-import offering1 from "../../assets/offering1.jpg"; // Left image
-import offering2 from "../../assets/offering1.jpg"; // Middle image
-import offering3 from "../../assets/offering1.jpg"; // Right image
+
 
 const Offerings = () => {
   const offerings = [
     {
-      image: offering1,
+      image: "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg",
       title: "Group Kalari Classes",
       desc: "Contact us for active batches",
     },
     {
-      image: offering2,
+      image: "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg",
       title: "Private Training",
       desc: "Adults & kids — by appointment",
     },
     {
-      image: offering3,
+      image: "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg" ,
       title: "Pop-Up Workshops",
       desc: "Festivals, wellness events, schools",
     },

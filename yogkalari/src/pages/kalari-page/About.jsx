@@ -1,8 +1,4 @@
 import React from "react";
-import kalariImg1 from "../../assets/kalari1.png"; // Top right image
-import kalariImg2 from "../../assets/kalari2.jpg"; // Middle left image
-import kalariImg3 from "../../assets/kalari3.jpg"; // Bottom right image
-
 const KalaripayattuDetails = () => {
   return (
     <section className="bg-[#FFFCF5] px-6 sm:px-10 md:px-16 lg:px-24 py-16 text-gray-800 font-sans leading-relaxed">
@@ -46,7 +42,7 @@ const KalaripayattuDetails = () => {
         {/* Right Column Image */}
         <div>
           <img
-            src={kalariImg1}
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702709/kalari1_zflvdw.jpg"
             alt="Kalaripayattu Warriors"
             className="rounded-lg shadow-lg w-full object-cover"
           />
@@ -58,7 +54,7 @@ const KalaripayattuDetails = () => {
         {/* Left Image */}
         <div className="sm:order-1">
           <img
-            src={kalariImg2}
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702572/kalari2_zszxft.jpg"
             alt="Kalari Training"
             className="rounded-lg shadow-lg w-full object-cover"
           />
@@ -98,7 +94,7 @@ const KalaripayattuDetails = () => {
         {/* Right Image */}
         <div>
           <img
-            src={kalariImg3}
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702581/kalari3_qysgwj.jpg"
             alt="Kalari Students"
             className="rounded-lg shadow-lg w-full object-cover"
           />

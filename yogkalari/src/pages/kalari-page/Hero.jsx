@@ -1,5 +1,4 @@
 import React from "react";
-import kalariImg from "../../assets/kalari.png"; // Update with your image path
 
 const Hero = () => {
   return (
@@ -25,7 +24,7 @@ const Hero = () => {
       {/* Image */}
       <div className="mt-6">
         <img
-          src={kalariImg}
+          src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702264/kalari_y0zjhq.png"
           alt="Kalaripayattu Warriors"
           className="w-[500px] sm:w-[550px] md:w-[650px] lg:w-[700px] relative z-20"
         />

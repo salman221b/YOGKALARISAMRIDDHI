@@ -1,6 +1,4 @@
 import React from "react";
-import trainerImg from "../../assets/face1.jpg"; // Replace with your trainer image path
-
 const Trainer = () => {
   return (
     <section className="bg-[#FFFCF5] py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
@@ -14,7 +12,7 @@ const Trainer = () => {
         {/* Left Image */}
         <div>
           <img
-            src={trainerImg}
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702243/face1_bbgauz.jpg"
             alt="Sachin Gurukkal"
             className="rounded-xl shadow-lg w-xl object-cover"
           />
