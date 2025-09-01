@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import MainPage from './pages/kalari-page/MainPage'
+// import MainPage from './pages/main-page/MainPage'
+// import MainPage from './pages/kalari-page/MainPage'
+import MainPage from './pages/yoga-page/MainPage'
 import YogaFooter from './components/YogaFooter'
 const App = () => {
   return (
