@@ -3,16 +3,16 @@ const Trainer = () => {
   return (
     <section className="bg-[#FFFCF5] py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
       {/* Section Title */}
-      <h2 className="text-center text-2xl md:text-3xl font-bold text-[#FD6F8E]">
-        Trainer
+      <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#A97375]">
+        Meet your Wellness Guide
       </h2>
 
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Image */}
         <div>
           <img
-            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702243/face1_bbgauz.jpg"
-            alt="Sachin Gurukkal"
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756893262/d9e86fc867dffaee8e6f5323a22409ca7d9c8229_on2dsz_ef9108.jpg"
+            alt="Sucheta Chadha"
             className="rounded-xl shadow-lg w-xl object-cover"
           />
         </div>
@@ -20,7 +20,7 @@ const Trainer = () => {
         {/* Right Content */}
         <div>
           <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
-            Sachin Gurukkal
+            Sucheta Chadha
           </h3>
           <p className="text-gray-600 italic mt-1">
             Yoga Therapist | Wellness Educator | Conscious Entrepreneur{" "}

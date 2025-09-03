@@ -4,19 +4,19 @@ const Offerings = () => {
   const offerings = [
     {
       image:
-        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg",
-      title: "Energy Realignment Sessions (New)",
+        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890082/offering1_tipcfw_3e76c6.jpg",
+      title: "Private Yoga & Energy Reset Sessions",
       desc: "Stillness-based, one-on-one sessions to gently realign the subtle body and calm the energetic field.",
     },
     {
       image:
-        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg",
+        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756887560/a688b748dc5bb0f408128ab2878043b4578fc9ed_xshqix.jpg",
       title: "Corporate Wellness",
       desc: "Breathwork, chair yoga, and stress-relief programs for workplaces seeking calmer, more creative teams.",
     },
     {
       image:
-        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg",
+        "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756887531/4f19df3973f28100dc5f53221da8e569220f76e1_nba6xg.jpg",
       title: "Yoga Workshops",
       desc: "Live offerings including the Hormone Harmony series and therapeutic intensives.",
     },
@@ -25,7 +25,7 @@ const Offerings = () => {
   return (
     <section className="bg-[#EDEAE0] py-16 px-6 sm:px-10 md:px-16 lg:px-24 text-center">
       {/* Title */}
-      <h2 className="text-2xl md:text-3xl font-bold text-[#FD6F8E]">
+      <h2 className="text-2xl md:text-3xl font-nunito text-[#A97375]">
         Offerings
       </h2>
       <p className="text-gray-600 mt-2  mx-auto text-sm sm:text-base ">
@@ -49,7 +49,7 @@ const Offerings = () => {
 
             {/* Content */}
             <div className="p-5">
-              <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 font-nunito">
                 {offering.title}
               </h3>
               <p className="text-gray-600 text-sm mt-2">{offering.desc}</p>

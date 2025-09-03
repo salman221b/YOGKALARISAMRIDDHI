@@ -6,10 +6,10 @@ const KalaripayattuDetails = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#FD6F8E]">
+          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
             Yoga Therapy
           </h2>
-          <p className="text-[#FD6F8E] italic mt-2 text-lg">
+          <p className="text-[#A97375] italic mt-2 text-lg">
             “शरीरम् आद्यं खलु धर्मसाधनम्”
           </p>
           <p className="text-gray-700 italic mb-4">
@@ -40,14 +40,13 @@ const KalaripayattuDetails = () => {
             <br /> Daily Vihāra Kriyās — Small, accessible rituals for everyday
             regulation
           </p>
-          <p>No two bodies are the same. Your practice shouldn't be either.</p>
         </div>
 
         {/* Right Column Image */}
         <div>
           <img
-            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702257/offering1_tipcfw.jpg"
-            alt="Kalaripayattu Warriors"
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890082/offering1_tipcfw_3e76c6.jpg"
+            alt="Yoga Therapy"
             className="rounded-lg shadow-lg object-cover w-full h-[600px]"
           />
         </div>
@@ -66,9 +65,9 @@ const KalaripayattuDetails = () => {
 
         {/* Right Content */}
         <div className="sm:order-2">
-          <h3 className="text-2xl font-bold text-[#FD6F8E]">
+          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
             We support clients with
-          </h3>
+          </h2>
           <ul className="mt-4 space-y-3 text-gray-700">
             <li>
               Hormonal health (PCOS, perimenopause, thyroid, menstrual
@@ -96,16 +95,15 @@ const KalaripayattuDetails = () => {
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h3 className="text-2xl font-bold text-[#FD6F8E]">
+          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
             What makes our Yoga Therapy different?
-          </h3>
+          </h2>
           <p>
             Unlike group classes offering generalized flows, our approach is
             tailored, introspective, and intentional. We hold space for inquiry,
             stillness, and sacred nuance — where practice becomes medicine, and
             your śarīra (body) becomes a temple of awareness.
           </p>
-          <p>No two bodies are the same. Your practice shouldn't be either.</p>
         </div>
 
         {/* Right Image */}
@@ -113,11 +111,10 @@ const KalaripayattuDetails = () => {
           <img
             src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756704191/c715afba25082f168a9425be119c5f75bf52e700_1_jzyes8.jpg"
             alt="Kalari Students"
-            className="rounded-lg shadow-lg w-full object-cover h-[400px]"
+            className="rounded-lg shadow-lg w-full object-cover h-[600px]"
           />
         </div>
       </div>
-
     </section>
   );
 };
