@@ -1,5 +1,5 @@
 import React from "react";
-import './Hero.css'
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -7,13 +7,16 @@ const Hero = () => {
       {/* Title */}
       <h1
         className="float-title text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#FD6F8E]"
-        style={{ fontFamily: 'Josefin Sans, sans-serif', letterSpacing: '0.1em' }}
+        style={{
+          fontFamily: "Josefin Sans, sans-serif",
+          letterSpacing: "0.1em",
+        }}
       >
-       YOGA THERAPY 
+        YOGA THERAPY
       </h1>
 
       {/* Subtitle */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-700  z-10">
+      <p className="text-sm sm:text-base md:text-lg text-gray-700  z-10 mt-7">
         Personalized practice. Rooted in śāstra. Designed for your healing.
       </p>
 

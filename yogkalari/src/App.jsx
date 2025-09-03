@@ -1,18 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import MainPage from './pages/main-page/MainPage'
-// import MainPage from './pages/kalari-page/MainPage'
-// import MainPage from './pages/yoga-page/MainPage'
 import YogaFooter from "./components/YogaFooter";
+
+// Import pages
+import MainPage from "./pages/yoga-page/MainPage";
+import KalariPage from "./pages/kalari-page/MainPage";
+import HomePage from "./pages/main-page/MainPage";
 import ContactForm from "./pages/contact-form/Contact";
+
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      {/* <MainPage/> */}
-      <ContactForm />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/kalari" element={<KalariPage />} />
+        <Route path="/yoga" element={<MainPage />} />
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
       <YogaFooter />
-    </div>
+    </Router>
   );
 };
 

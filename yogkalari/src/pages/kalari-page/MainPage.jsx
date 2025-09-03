@@ -6,6 +6,7 @@ import Offerings from './Offerings'
 import Trainer from './Trainer'
 import BenefitsSection from './BenefitsSection'
 import MarqueeBanner from './MarqueeBanner'
+import ScrollToTop from '../../components/ScrollToTop'
 
 const MainPage = () => {
   return (
@@ -16,6 +17,7 @@ const MainPage = () => {
       <Trainer/>
       <BenefitsSection/>
       <MarqueeBanner/>
+      <ScrollToTop/>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Cards from './Cards'
 import FounderSection from './FounderSection'
 import Marquee from './Marquee'
 import WhispersWellnessPage from './WhispersWellnessPage'
+import ScrollToTop from '../../components/ScrollToTop'
 
 
 const MainPage = () => {
@@ -16,7 +17,7 @@ const MainPage = () => {
       <FounderSection/>
       <Marquee/>
       <WhispersWellnessPage/>
-      
+      <ScrollToTop/>
     </div>
   )
 }
