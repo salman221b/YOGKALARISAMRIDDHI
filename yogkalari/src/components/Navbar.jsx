@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Right - WhatsApp Button */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/919633772040" // Replace with your WhatsApp number
+              href="https://wa.me/919633772040?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
@@ -94,7 +94,7 @@ const Navbar = () => {
 
         {/* WhatsApp Button - Mobile */}
         <a
-          href="https://wa.me/919633772040" // Replace with your WhatsApp number
+          href="https://wa.me/919633772040?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
