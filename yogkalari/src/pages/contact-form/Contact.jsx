@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MarqueeBanner from "./MarqueeBanner";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -84,11 +85,38 @@ const ContactForm = () => {
     if (Object.keys(allErrors).length > 0) {
       setError(allErrors);
       setValid(false);
+
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please fill all required fields correctly!",
+        confirmButtonColor: "#2F5C4E",
+      });
+
       return;
     }
 
     console.log("Form Data:", formData);
-    alert("Form submitted successfully!");
+
+    // Show success alert
+    Swal.fire({
+      icon: "success",
+      title: "Success!",
+      text: "Your form has been submitted successfully 🎉",
+      confirmButtonColor: "#2F5C4E",
+    });
+
+    // Reset form
+    setFormData({
+      category: "",
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      whatsapp: "",
+      martialArtsExp: "",
+      message: "",
+    });
   };
 
   return (
