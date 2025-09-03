@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -7,15 +8,8 @@ const cards = [
     description:
       "Traditional yoga for real-life healing. Breath, gentle movement and deep rest ease pain, steady hormones and calm a wired mind. Tailored one-to-one care—quiet, attentive, effective—for women navigating burnout, cycles and stress. Private sessions and select workplace programs for those who value depth over trends.",
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=400",
-  },
-  {
-    title: "Samriddhi Terrariums",
-    subtitle: "“पृथ्वी तत्वं शुभं करोतु”",
-    description:
-      "Prthvi tattvam śubham karotu. May the earth element bring auspiciousness.",
-    image:
-     "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&h=400",
+      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890082/offering1_tipcfw_3e76c6.jpg",
+    link: "/yoga",
   },
   {
     title: "Kalaripayattu - Martial Arts",
@@ -23,7 +17,18 @@ const cards = [
     description:
       "India’s classical warrior art—taught with discipline and care. Flowing Kalari sequences build strength, agility and focus while cultivating humility and discipline. Beginners, adults and kids welcome. Join a small group or book private training to move with grounded power.",
     image:
- "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&h=400",  },
+      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890835/d23090fecb048b2a3c06b0d74d81cea3d9909db1_hvprdm_a5f872.jpg",
+    link: "/kalari",
+  },
+  {
+    title: "Samriddhi Terrariums",
+    subtitle: "Corporate Gifting | Sacred Home | Wellness Décor",
+    description:
+      "Closed-glass living terrariums that calm a room and invite pause. Low-maintenance and long-lasting—quietly elegant for gifting, desks and serene corners. Choose small to XL, or request a custom build around a figurine that carries your story.",
+    image:
+      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890523/182bec551d38436dcfb4352b31d485dcebdecedf_razufc_ebb494.jpg",
+    link: "/terrariums",
+  },
 ];
 
 const ServiceCards = () => {
@@ -44,7 +49,7 @@ const ServiceCards = () => {
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-full object-cover rounded-t-2xl transition-all duration-700 ease-in-out grayscale group-hover:grayscale-0 group-hover:h-full"
+                className="w-full h-full object-cover rounded-t-2xl transition-all duration-700 ease-in-out md:grayscale group-hover:grayscale-0 group-hover:h-full"
               />
             </div>
 
@@ -63,9 +68,12 @@ const ServiceCards = () => {
             <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
               <h3 className="text-white text-lg font-semibold">{card.title}</h3>
               <p className="text-white text-sm mt-1">{card.subtitle}</p>
-              <button className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <Link
+                to={card.link}
+                className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 Know more
-              </button>
+              </Link>
             </div>
           </div>
         ))}

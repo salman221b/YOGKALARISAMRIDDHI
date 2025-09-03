@@ -4,16 +4,16 @@ const founders = [
   {
     name: "Sachin Gurukkal",
     image:
-      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=600&fit=crop&crop=face",
+      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756891653/33230a6f775caee0b3dd48812f50e8f57b707db9_k44gpp_6e330c.jpg",
     description:
-      "Sachin Gurukkal is a lineage-trained Kalaripayattu teacher with 15 years’ teaching. He leads adults and kids through flowing Kalari that builds strength, agility, focus and humility. Grounded and safe, his training honors tradition while meeting modern bodies—cultivating courage, discipline and quiet power.",
+      "Sachin Gurukkal is a lineage-trained Kalaripayattu teacher with 15+ years teaching. He leads adults and kids through flowing Kalari that builds strength, agility, focus and humility. Grounded and safe, his training honors tradition while meeting modern bodies—cultivating courage, discipline and quiet power.",
   },
   {
-    name: "Another Founder",
+    name: "Yogini Sucheta",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face",
+      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1756891710/9f87695ca0470a54f3eecfd28a53a3590fc5f1ab_n5ooqd_c1a3ab.jpg",
     description:
-      "Another Founder is passionate about holistic living, teaching techniques to maintain balance and wellness in life. Her sessions blend mindfulness, fitness, and self-awareness for personal growth.",
+      "Sucheta is a yoga therapist who helps people come home to their bodies. With 13+ years of one-to-one work, she supports women’s health, pain, burnout, stress and recovery using breath, gentle movement, meditation and deep rest. Her calm, tradition-rooted care guides steady change—better sleep and a quieter mind.",
   },
 ];
 
@@ -35,7 +35,7 @@ const FounderCards = () => {
               <img
                 src={founder.image}
                 alt={founder.name}
-                className="w-full h-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105 "
+                className="w-full h-full object-cover transition-all duration-500 md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 "
               />
             </div>
 

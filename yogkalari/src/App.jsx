@@ -8,10 +8,12 @@ import MainPage from "./pages/yoga-page/MainPage";
 import KalariPage from "./pages/kalari-page/MainPage";
 import HomePage from "./pages/main-page/MainPage";
 import ContactForm from "./pages/contact-form/Contact";
+import ScrollUp from "./components/ScrollUp";
 
 const App = () => {
   return (
     <Router>
+      <ScrollUp />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
