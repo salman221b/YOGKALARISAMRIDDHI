@@ -3,22 +3,26 @@ import "./MarqueeBanner.css"; // Import custom CSS
 
 const MarqueeBanner = () => {
   return (
-    <div className="w-full bg-[#b4623a] overflow-hidden">
+    <div className="w-full bg-[#94563D] overflow-hidden">
       <div className="marquee py-2">
         <span className="text-white text-sm md:text-base">
-          - Use code <b>BREATHE10</b> for 10% off your first session or terrarium
+          - Use code <b>BREATHE10</b> for 10% off your first session or
+          terrarium
         </span>
         <span className="text-white text-sm md:text-base">
-          - Use code <b>BREATHE10</b> for 10% off your first session or terrarium
+          - Use code <b>BREATHE10</b> for 10% off your first session or
+          terrarium
         </span>
         <span className="text-white text-sm md:text-base">
-          - Use code <b>BREATHE10</b> for 10% off your first session or terrarium
+          - Use code <b>BREATHE10</b> for 10% off your first session or
+          terrarium
         </span>
         <span className="text-white text-sm md:text-base">
-          - Use code <b>BREATHE10</b> for 10% off your first session or terrarium
+          - Use code <b>BREATHE10</b> for 10% off your first session or
+          terrarium
         </span>
       </div>
-       <div className="bg-gradient-to-br from-[#2F5C4E] to-[#1E3D33] py-5 px-6">
+      <div className="bg-gradient-to-br from-[#2F5C4E] to-[#1E3D33] py-5 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Ready to Begin Your Wellness Journey?

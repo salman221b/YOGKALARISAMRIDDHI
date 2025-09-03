@@ -22,41 +22,83 @@ const Trainer = () => {
           <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
             Sucheta Chadha
           </h3>
-          <p className="text-gray-600 italic mt-1">
-            Yoga Therapist | Wellness Educator | Conscious Entrepreneur{" "}
+          <p className="text-gray-600 italic mt-1 text-lg">
+            Yoga Therapist | Wellness Educator | Conscious Entrepreneur
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            With over 13 years of experience in therapeutic yoga, Sucheta has
-            supported hundreds of individuals — especially women — through
-            hormonal imbalances, burnout recovery, and chronic health
-            conditions.
+          {/* Intro */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            With over{" "}
+            <span className="font-semibold">
+              13 years of experience in therapeutic yoga
+            </span>
+            , Sucheta has guided
+            <span className="font-semibold"> hundreds of individuals</span> —
+            especially
+            <span className="font-semibold">
+              {" "}
+              women navigating hormonal imbalances, burnout recovery
+            </span>
+            , and{" "}
+            <span className="font-semibold">chronic health conditions</span>.
           </p>
-          <p> Her approach draws from the yoga śāstra, integrating:</p>
-          <ul className="mt-3 space-y-2 text-gray-700 list-disc list-inside">
-            <li>Prāṇāyāma — breathwork to regulate subtle energy</li>
-            <li>Āsana — movement adapted to each body</li>
-            <li> Manonigraha — mental clarity and inner stillness</li>
+
+          {/* Yoga Approach */}
+          <p className="mt-5 text-gray-700 text-[1.05rem]">
+            Her approach draws from the{" "}
+            <span className="font-semibold">yoga śāstra</span>, integrating:
+          </p>
+          <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside text-[1.05rem]">
             <li>
-              Upayoga-inspired rituals — accessible daily practices for
-              real-life regulation
+              <span className="font-semibold">Prāṇāyāma</span> — breathwork to
+              regulate subtle energy
+            </li>
+            <li>
+              <span className="font-semibold">Āsana</span> — movement adapted to
+              each body
+            </li>
+            <li>
+              <span className="font-semibold">Manonigraha</span> — mental
+              clarity and inner stillness
+            </li>
+            <li>
+              <span className="font-semibold">Upayoga-inspired rituals</span> —
+              accessible daily practices for real-life regulation
             </li>
           </ul>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            A former corporate professional herself, she brings a unique lens to
-            workplace wellness, helping professionals shift from depletion to
-            ojas — vital strength and presence.
+          {/* Workplace Wellness */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            A{" "}
+            <span className="font-semibold">former corporate professional</span>
+            , Sucheta brings a unique
+            <span className="font-semibold">
+              {" "}
+              perspective to workplace wellness
+            </span>
+            , helping professionals shift from
+            <span className="italic"> depletion </span>to{" "}
+            <span className="italic">ojas</span> — vital strength and presence.
           </p>
 
-          <p className="mt-2 text-gray-700 leading-relaxed">
-            For her, the body is not just a vessel, but a sādhana-yantra — a
-            sacred instrument for restoring clarity, rhythm, and connection.
+          {/* Philosophy */}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
+            For Sucheta, the body is not just a vessel, but a
+            <span className="italic"> sādhana-yantra</span> — a
+            <span className="font-semibold"> sacred instrument</span> for
+            restoring clarity, rhythm, and connection.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            This philosophy flows into her work with Samriddhi Terrariums, where
-            earth wisdom, care, and quiet beauty meet in ritual form.
+          {/* Closing */}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
+            This philosophy flows into her work with
+            <span className="font-semibold"> Samriddhi Terrariums</span>, where
+            <span className="italic">
+              {" "}
+              earth wisdom, care, and quiet beauty
+            </span>{" "}
+            meet in
+            <span className="italic"> ritual form</span>.
           </p>
         </div>
       </div>

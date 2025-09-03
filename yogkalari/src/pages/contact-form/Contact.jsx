@@ -10,7 +10,6 @@ const ContactForm = () => {
     email: "",
     phone: "",
     whatsapp: "",
-    martialArtsExp: "",
     message: "",
   });
 
@@ -57,11 +56,6 @@ const ContactForm = () => {
         newError.whatsapp = /^\d{10,}$/.test(value)
           ? ""
           : "WhatsApp number must be at least 10 digits.";
-        break;
-      case "martialArtsExp":
-        newError.martialArtsExp = value
-          ? ""
-          : "Please select your martial arts experience.";
         break;
       default:
         break;
@@ -124,15 +118,15 @@ const ContactForm = () => {
       <section className="bg-[#FFFCF5] flex justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-5xl bg-[#EDEAE0] mt-20 rounded-2xl shadow-md p-8 sm:p-10 md:p-12">
           {/* Logo + Title */}
-          <div className="flex flex-col items-center mb-6">
+          <div className="flex items-center mb-6">
             <img
               src="/logo.png"
               alt="YogKalariSamriddhi"
-              className="h-10 mb-3"
+              className="h-8 w-8 mr-3"
             />
-            <h1 className="text-2xl font-semibold text-[#065F46] tracking-wide">
+            <span className="text-2xl font-tunito text-[#065F46] tracking-wide">
               YOGKALARISAMRIDDHI
-            </h1>
+            </span>
           </div>
 
           {/* Heading */}
@@ -149,7 +143,7 @@ const ContactForm = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
             {/* Select Category */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3">
+            <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Select Category
               </label>
@@ -205,24 +199,6 @@ const ContactForm = () => {
               )}
             </div>
 
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your Email"
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
-              />
-              {error.email && (
-                <p className="text-red-500 text-sm mt-1">{error.email}</p>
-              )}
-            </div>
-
             {/* Phone Number */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -261,25 +237,21 @@ const ContactForm = () => {
               )}
             </div>
 
-            {/* Previous Martial Arts Experience */}
+            {/* Email */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Previous Martial Arts Experience
+                Email
               </label>
-              <select
-                name="martialArtsExp"
-                value={formData.martialArtsExp}
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
+                placeholder="Enter your Email"
                 className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
-              >
-                <option value="">Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              {error.martialArtsExp && (
-                <p className="text-red-500 text-sm mt-1">
-                  {error.martialArtsExp}
-                </p>
+              />
+              {error.email && (
+                <p className="text-red-500 text-sm mt-1">{error.email}</p>
               )}
             </div>
 

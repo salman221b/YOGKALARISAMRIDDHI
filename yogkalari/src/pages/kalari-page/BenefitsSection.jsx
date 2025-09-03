@@ -32,7 +32,7 @@ const BenefitsSection = () => {
   return (
     <div className="bg-[#f8f5f1] px-6 md:px-16 py-12">
       {/* Benefits Heading */}
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#b4623a] mb-8">
+      <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D] mb-8">
         Benefits of Kalaripayattu
       </h2>
 
@@ -51,24 +51,28 @@ const BenefitsSection = () => {
 
       {/* Whispers of Wellness */}
       <div className="mt-10">
-        <h3 className="text-center text-2xl md:text-3xl font-semibold text-[#b4623a] mb-6">
+        <h3 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D] mb-6">
           Whispers of Wellness
         </h3>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-8">
           {/* Left Side Text */}
           <p className="text-lg text-gray-900 md:w-1/2 leading-relaxed">
-            Every word shared here is a quiet echo of trust, transformation, and timeless care. 
-            Our clients don’t just experience a service; they step into a philosophy.
+            Every word shared here is a quiet echo of trust, transformation, and
+            timeless care. Our clients don’t just experience a service; they
+            step into a philosophy.
           </p>
 
           {/* Testimonial Card */}
           <div className="bg-white rounded-xl shadow-md p-6 md:w-1/2">
             <FaQuoteLeft className="text-gray-300 text-3xl mb-3" />
-            <h4 className="font-semibold text-lg">The Experience was awesome</h4>
+            <h4 className="font-semibold text-lg">
+              The Experience was awesome
+            </h4>
             <p className="text-gray-600 text-sm mt-2">
-              Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
-              publishing, and web development. Its purpose is to permit a page layout to be
-              designed, independently of the copy that will subsequently populate it.
+              Lorem ipsum is a dummy or placeholder text commonly used in
+              graphic design, publishing, and web development. Its purpose is to
+              permit a page layout to be designed, independently of the copy
+              that will subsequently populate it.
             </p>
             <div className="flex items-center justify-between mt-4">
               {/* Avatar & Name */}

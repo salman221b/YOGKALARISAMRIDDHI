@@ -2,17 +2,16 @@ import React from "react";
 const Trainer = () => {
   return (
     <section className="bg-[#FFFCF5] py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
-      
       {/* Section Title */}
-      <h2 className="text-center text-2xl md:text-3xl font-bold text-[#B35434]">
-        Trainer
+      <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D]">
+        Meet your Kalari Gurukkal
       </h2>
 
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Image */}
         <div>
           <img
-            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756702243/face1_bbgauz.jpg"
+            src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756887436/5f559bbdd3c549582b72b03a0da938256f33c829_wzrsgu.jpg"
             alt="Sachin Gurukkal"
             className="rounded-xl shadow-lg w-xl object-cover"
           />
@@ -27,53 +26,108 @@ const Trainer = () => {
             Traditional Kalari Teacher | Lineage Holder | Movement Guide
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Trained in the ancient gurukula system of Kerala, Sachin Gurukkal brings
-            over 15 years of teaching experience, including the past 8 years in Dubai,
-            offering Kalaripayattu as a powerful system of movement, breath, and inner
-            stillness.
+          {/* Introduction */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            <span className="font-semibold">Sachin Gurukkal, </span>
+            Trained in the{" "}
+            <span className="font-semibold">
+              ancient gurukula tradition of Kerala
+            </span>
+            , Sachin Gurukkal brings{" "}
+            <span className="font-semibold">
+              15+ years of expertise in Kalaripayattu instruction
+            </span>
+            , including{" "}
+            <span className="font-semibold">
+              8 immersive years of teaching in Dubai
+            </span>
+            . His approach offers{" "}
+            <span className="font-semibold">
+              Kalaripayattu as a transformative practice
+            </span>
+            —a dynamic fusion of{" "}
+            <span className="italic">movement, breathwork,</span> and{" "}
+            <span className="italic">inner stillness</span>.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Rooted in the marma system and temple traditions of southern India, his
-            teaching transmits not just form and technique — but śarīra śikṣa (body
-            education), energetic discipline, and grounded awareness.
+          {/* Roots and Philosophy */}
+          <p className="mt-5 text-gray-700 leading-relaxed text-[1.05rem]">
+            Rooted in the <span className="font-semibold">marma system</span>{" "}
+            and <span className="font-semibold">temple traditions</span> of
+            southern India, his teaching transmits not just form and technique
+            but also <span className="italic">śarīra śikṣaṇa</span> (body
+            education),{" "}
+            <span className="font-semibold">energetic discipline</span>, and{" "}
+            <span className="font-semibold">grounded awareness</span>.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            His classes are rigorous yet graceful, inviting students of all ages to embody:
+          {/* Classes */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            His classes are{" "}
+            <span className="font-semibold">rigorous yet graceful</span>,
+            inviting students of all ages to embody:
           </p>
-
-          <ul className="mt-3 space-y-2 text-gray-700 list-disc list-inside">
-            <li>Strength through surrender</li>
-            <li>Power through stillness</li>
-            <li>Discipline through presence</li>
+          <ul className="mt-3 space-y-2 text-gray-700 list-disc list-inside text-[1.05rem]">
+            <li>
+              <span className="font-semibold">Strength</span> through surrender
+            </li>
+            <li>
+              <span className="font-semibold">Power</span> through stillness
+            </li>
+            <li>
+              <span className="font-semibold">Discipline</span> through presence
+            </li>
           </ul>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            His work brings ancient Kalari into modern spaces — without dilution,
-            without compromise.
+          {/* Integration */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            Sachin Gurukkal’s work{" "}
+            <span className="font-semibold">
+              bridges ancient Kalari wisdom with modern wellness spaces
+            </span>
+            —without dilution, without compromise.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            <strong>A Business Anchored in Ritual</strong>
+          {/* Brand Philosophy */}
+          <p className="mt-6 font-semibold text-gray-900">
+            YogKalariSamriddhi: A Ritual-Rooted Wellness Brand
           </p>
-
-          <p className="mt-2 text-gray-700 leading-relaxed">
-            From breath-led yoga to living terrariums to the fire and form of Kalari,
-            every offering of YogKalariSamriddhi is:
+          <p className="mt-2 text-gray-700 leading-relaxed text-[1.05rem]">
+            From <span className="italic">breath-led yoga</span> to{" "}
+            <span className="italic">living terrariums</span> to the{" "}
+            <span className="italic">fire and form of Kalari</span>, every
+            offering from YogKalariSamriddhi is:
           </p>
+          <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside text-[1.05rem]">
+            <li>
+              <span className="font-semibold">
+                Guided by śāstra and aligned with ṛta
+              </span>{" "}
+              (cosmic rhythm)
+            </li>
+            <li>
+              <span className="font-semibold">
+                Inspired by pañca mahābhūtas
+              </span>{" "}
+              — earth, water, fire, air, and space
+            </li>
+            <li>
+              <span className="font-semibold">
+                Designed to cultivate inner prosperity and outer harmony
+              </span>
+            </li>
+          </ul>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Guided by śāstra and rooted in ṛta (cosmic rhythm). Inspired by the pañca
-            mahābhūtas — earth, water, fire, air, and space. Designed to foster inner
-            prosperity and outer harmony.
-          </p>
-
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            This is not wellness for performance.
-            <br />
-            This is wellness as sādhana — a return to what is essential.
+          {/* Closing Note */}
+          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+            This is{" "}
+            <span className="font-semibold">
+              not performance-driven wellness
+            </span>
+            . <br />
+            This is{" "}
+            <span className="font-semibold italic">wellness as sādhana</span> —
+            a sacred return to what is essential, timeless, and true.
           </p>
         </div>
       </div>
