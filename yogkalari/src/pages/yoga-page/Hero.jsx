@@ -16,7 +16,7 @@ const Hero = () => {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-700  z-10 mt-7">
+      <p className="text-sm sm:text-base md:text-lg text-gray-700 text-center z-10 mt-7 px-4 md:px-0">
         Personalized practice. Rooted in śāstra. Designed for your healing.
       </p>
 
