@@ -49,10 +49,15 @@ const Navbar = () => {
 
           {/* Right - WhatsApp Button */}
           <div className="hidden md:block">
-            <button className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition">
+            <a
+              href="https://wa.me/919633772040" // Replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
+            >
               <FaWhatsapp className="text-xl" />
               <span>Let's Chat</span>
-            </button>
+            </a>
           </div>
 
           {/* Hamburger Icon */}
@@ -88,13 +93,15 @@ const Navbar = () => {
         ))}
 
         {/* WhatsApp Button - Mobile */}
-        <button
-          onClick={toggleMenu}
-          className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition mb-4 text-white"
+        <a
+          href="https://wa.me/919633772040" // Replace with your WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
         >
           <FaWhatsapp className="text-xl" />
           <span>Let's Chat</span>
-        </button>
+        </a>
       </div>
     </nav>
   );
