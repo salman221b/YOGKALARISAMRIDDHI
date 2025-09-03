@@ -88,7 +88,7 @@ const Navbar = () => {
                 : "text-black hover:text-[#2F5C4E]"
             }`}
           >
-            <span className="font-nunito">{link.label}</span>
+            <span className="font-nunito font-normal">{link.label}</span>
           </Link>
         ))}
 
