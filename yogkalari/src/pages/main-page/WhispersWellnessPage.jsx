@@ -15,7 +15,9 @@ const WhispersWellnessPage = () => {
             {/* Left Side - Description */}
             <div className="space-y-6">
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                Every word shared here is a quiet echo of trust, transformation, and timeless care. Our clients don't just experience a service; they step into a philosophy.
+                Every word shared here is a quiet echo of trust, transformation,
+                and timeless care. Our clients don't just experience a service;
+                they step into a philosophy.
               </p>
             </div>
 
@@ -26,21 +28,26 @@ const WhispersWellnessPage = () => {
                   The Experience was awesome
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Lorem ipsum is a dummy or placeholder text commonly used in graphic design, 
-                  publishing, and web development. Its purpose is to permit a page layout to be 
-                  designed, independently of the copy that will subsequently populate it.
+                  Lorem ipsum is a dummy or placeholder text commonly used in
+                  graphic design, publishing, and web development. Its purpose
+                  is to permit a page layout to be designed, independently of
+                  the copy that will subsequently populate it.
                 </p>
-                
+
                 {/* User Info */}
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
-                    <span className="text-gray-600 text-sm font-medium">JD</span>
+                    <span className="text-gray-600 text-sm font-medium">
+                      JD
+                    </span>
                   </div>
                   <div>
                     <p className="font-medium text-gray-800">John Doe</p>
                     <div className="flex space-x-1 mt-1">
                       {[1, 2, 3, 4].map((star) => (
-                        <span key={star} className="text-orange-400 text-sm">★</span>
+                        <span key={star} className="text-orange-400 text-sm">
+                          ★
+                        </span>
                       ))}
                       <span className="text-gray-300 text-sm">★</span>
                     </div>
@@ -53,7 +60,7 @@ const WhispersWellnessPage = () => {
       </div>
 
       {/* Bottom CTA Section */}
-      <div className="bg-gradient-to-br from-[#2F5C4E] to-[#1E3D33] py-10 px-6">
+      <div className="bg-[#084C2E] py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Ready to Begin Your Wellness Journey?

@@ -18,7 +18,7 @@ const MarqueeBanner = () => {
           - Use code <b>BREATHE10</b> for 10% off your first session or terrarium
         </span>
       </div>
-       <div className="bg-gradient-to-br from-[#2F5C4E] to-[#1E3D33] py-5 px-6">
+       <div className="bg-[#084C2E] py-5 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Ready to Begin Your Wellness Journey?

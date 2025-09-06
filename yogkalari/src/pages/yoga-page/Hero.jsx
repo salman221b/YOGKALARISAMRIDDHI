@@ -1,12 +1,10 @@
 import React from "react";
-import "./Hero.css";
-
 const Hero = () => {
   return (
     <section className="relative flex flex-col items-center justify-center bg-[#FFFCF5] py-16">
       {/* Title */}
       <h1
-        className="float-title text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#A97375]"
+        className=" text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#A97375]"
         style={{
           fontFamily: "Josefin Sans, sans-serif",
           letterSpacing: "0.1em",
@@ -16,7 +14,7 @@ const Hero = () => {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-700 text-center z-10 mt-7 px-4 md:px-0">
+      <p className="text-sm sm:text-base md:text-lg text-gray-700 text-center z-10 mt-3 px-4 md:px-0">
         Personalized practice. Rooted in śāstra. Designed for your healing.
       </p>
 

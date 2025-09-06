@@ -28,7 +28,7 @@ const Offerings = () => {
       <h2 className="text-2xl md:text-3xl font-nunito text-[#A97375]">
         Offerings
       </h2>
-      <p className="text-gray-600 mt-2  mx-auto text-sm sm:text-base ">
+      <p className="text-gray-600 mt-2  mx-auto text-sm sm:text-base font-nunito">
         Based in Dubai. (Classes offered in select locations. Contact us to
         explore starting a group near you.)
       </p>
@@ -52,7 +52,9 @@ const Offerings = () => {
               <h3 className="text-lg md:text-xl font-semibold text-gray-900 font-nunito">
                 {offering.title}
               </h3>
-              <p className="text-gray-600 text-sm mt-2">{offering.desc}</p>
+              <p className="text-gray-600 text-sm mt-2 font-nunito">
+                {offering.desc}
+              </p>
             </div>
           </div>
         ))}

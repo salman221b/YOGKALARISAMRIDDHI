@@ -151,11 +151,11 @@ const ContactForm = () => {
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               >
                 <option value="">Select</option>
-                <option value="Kalari Classes">Kalari Classes</option>
                 <option value="Yoga">Yoga</option>
+                <option value="Kalari">Kalari</option>
                 <option value="Terrariums">Terrariums</option>
               </select>
               {error.category && (
@@ -174,7 +174,7 @@ const ContactForm = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
               {error.firstName && (
                 <p className="text-red-500 text-sm mt-1">{error.firstName}</p>
@@ -192,7 +192,7 @@ const ContactForm = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
               {error.lastName && (
                 <p className="text-red-500 text-sm mt-1">{error.lastName}</p>
@@ -211,7 +211,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder="Enter your Phone Number"
                 maxLength={15}
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
               {error.phone && (
                 <p className="text-red-500 text-sm mt-1">{error.phone}</p>
@@ -230,7 +230,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder="Enter your WhatsApp Number"
                 maxLength={15}
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
               {error.whatsapp && (
                 <p className="text-red-500 text-sm mt-1">{error.whatsapp}</p>
@@ -248,7 +248,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your Email"
-                className="w-full px-4 py-2 border rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
               {error.email && (
                 <p className="text-red-500 text-sm mt-1">{error.email}</p>
@@ -264,9 +264,9 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Tell Us"
+                placeholder="Enter your message"
                 rows={4}
-                className="w-full px-4 py-2 border rounded-lg outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
               />
             </div>
 
