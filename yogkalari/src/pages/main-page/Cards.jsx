@@ -40,8 +40,9 @@ const ServiceCards = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
         {cards.map((card, index) => (
-          <div
+          <Link
             key={index}
+            to={card.link}
             className="group relative bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl"
           >
             {/* Image */}
@@ -68,14 +69,11 @@ const ServiceCards = () => {
             <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
               <h3 className="text-white text-lg font-semibold">{card.title}</h3>
               <p className="text-white text-sm mt-1">{card.subtitle}</p>
-              <Link
-                to={card.link}
-                className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300"
-              >
+              <span className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
                 Know more
-              </Link>
+              </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
