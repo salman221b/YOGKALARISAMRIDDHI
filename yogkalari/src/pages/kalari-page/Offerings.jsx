@@ -40,7 +40,7 @@ const Offerings = () => {
         explore starting a group near you.)
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full items-center lg:mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full lg:mx-auto">
         {cards.map((card, index) => (
           <Link
             key={index}
