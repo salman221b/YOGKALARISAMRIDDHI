@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import TnC from "../assets/TnC.pdf";
+import FAQs from "../assets/FAQs.pdf";
 const YogaFooter = () => {
   return (
     <footer className="bg-[#F5F2EB] py-12 sm:py-16">
@@ -20,7 +21,7 @@ const YogaFooter = () => {
               {/* YouTube Icon */}
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-amber-700 transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors duration-300 flex-shrink-0"
                 aria-label="YouTube"
               >
                 <svg
@@ -35,7 +36,7 @@ const YogaFooter = () => {
               {/* Instagram Icon */}
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-amber-700 transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors duration-300 flex-shrink-0"
                 aria-label="Instagram"
               >
                 <svg
@@ -50,7 +51,7 @@ const YogaFooter = () => {
               {/* WhatsApp Icon */}
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-amber-700 transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#25D366] transition-colors duration-300 flex-shrink-0"
                 aria-label="WhatsApp"
               >
                 <svg
@@ -134,7 +135,9 @@ const YogaFooter = () => {
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <a
-                  href="#"
+                  href={TnC}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
                 >
                   Privacy & Policy
@@ -142,7 +145,9 @@ const YogaFooter = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={FAQs}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
                 >
                   FAQ
