@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MarqueeBanner from "./MarqueeBanner";
 import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -92,13 +93,42 @@ const ContactForm = () => {
 
     console.log("Form Data:", formData);
 
-    // Show success alert
-    Swal.fire({
-      icon: "success",
-      title: "Success!",
-      text: "Your form has been submitted successfully 🎉",
-      confirmButtonColor: "#2F5C4E",
-    });
+    emailjs
+      .send(
+        "service_xq04glg", // from EmailJS
+        "template_jy2u90d", // from EmailJS
+        formData,
+        "XgiLvulQ_qgPGI3Pt" // from EmailJS
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          Swal.fire({
+            icon: "success",
+            title: "Success!",
+            text: "Your form has been submitted successfully 🎉",
+            confirmButtonColor: "#2F5C4E",
+          });
+          setFormData({
+            category: "",
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            whatsapp: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong. Please try again later!",
+            confirmButtonColor: "#2F5C4E",
+          });
+        }
+      );
 
     // Reset form
     setFormData({

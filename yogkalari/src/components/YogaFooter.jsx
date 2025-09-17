@@ -20,7 +20,9 @@ const YogaFooter = () => {
             <div className="flex space-x-3 justify-center sm:justify-start">
               {/* YouTube Icon */}
               <a
-                href="#"
+                href="https://youtube.com/@yogkalarisamriddhi?si=MQ0ASPrUvkQEgwl1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors duration-300 flex-shrink-0"
                 aria-label="YouTube"
               >
@@ -35,7 +37,9 @@ const YogaFooter = () => {
 
               {/* Instagram Icon */}
               <a
-                href="#"
+                href="https://www.instagram.com/yogkalarisamriddhi?igsh=Z2ZsajluODg2c2Vh"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors duration-300 flex-shrink-0"
                 aria-label="Instagram"
               >
@@ -50,7 +54,9 @@ const YogaFooter = () => {
 
               {/* WhatsApp Icon */}
               <a
-                href="#"
+                href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#25D366] transition-colors duration-300 flex-shrink-0"
                 aria-label="WhatsApp"
               >
@@ -72,37 +78,38 @@ const YogaFooter = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
                 >
                   Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
-                >
-                  About
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/yoga"
                   className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
                 >
-                  Contact
+                  Yoga
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/kalari"
+                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                >
+                  Kalari
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terrariums"
+                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                >
+                  Terrariums
+                </Link>
+              </li>
+            
             </ul>
           </div>
 
