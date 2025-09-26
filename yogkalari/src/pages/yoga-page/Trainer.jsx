@@ -1,7 +1,7 @@
 import React from "react";
 const Trainer = () => {
   return (
-    <section className="bg-[#FFFCF5] py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
+    <section className="py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
       {/* Section Title */}
       <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#A97375]">
         Meet your Wellness Guide

@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center bg-[#FFFCF5] py-16">
+    <section className="relative flex flex-col items-center justify-center py-16">
       {/* Title */}
       <h1
         className=" text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#A97375]"

@@ -16,7 +16,10 @@ const ProductDetails = () => {
   }
 
   return (
-    <section className="bg-white py-10 px-6 md:px-16 pt-30">
+    <section className="py-10 px-6 md:px-16 pt-30">
+      <div className="text-sm text-gray-500 mb-6">
+        Home &gt; Terrariums &gt; <span className="text-gray-800">Product</span>
+      </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left: Product Images */}
         <div>

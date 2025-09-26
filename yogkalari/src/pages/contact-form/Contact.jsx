@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import MarqueeBanner from "./MarqueeBanner";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
 
@@ -14,100 +13,32 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [error, setError] = useState({});
-  const [valid, setValid] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    // Allow only numbers for phone & whatsapp fields
     const filteredValue =
       name === "phone" || name === "whatsapp"
         ? value.replace(/\D/g, "")
         : value;
-
     setFormData({ ...formData, [name]: filteredValue });
-    validateField(name, filteredValue);
-  };
-
-  const validateField = (name, value) => {
-    let newError = { ...error };
-
-    switch (name) {
-      case "category":
-        newError.category = value ? "" : "Please select a category.";
-        break;
-      case "firstName":
-        newError.firstName = value.trim() ? "" : "First name is required.";
-        break;
-      case "lastName":
-        newError.lastName = value.trim() ? "" : "Last name is required.";
-        break;
-      case "email":
-        newError.email = /^\S+@\S+\.\S+$/.test(value)
-          ? ""
-          : "Please enter a valid email address.";
-        break;
-      case "phone":
-        newError.phone = /^\d{10,}$/.test(value)
-          ? ""
-          : "Phone number must be at least 10 digits.";
-        break;
-      case "whatsapp":
-        newError.whatsapp = /^\d{10,}$/.test(value)
-          ? ""
-          : "WhatsApp number must be at least 10 digits.";
-        break;
-      default:
-        break;
-    }
-
-    setError(newError);
-    setValid(Object.values(newError).every((msg) => msg === ""));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const allErrors = {};
-    Object.keys(formData).forEach((field) => {
-      validateField(field, formData[field]);
-      if (!formData[field] && field !== "message") {
-        allErrors[field] = "This field is required.";
-      }
-    });
-
-    if (Object.keys(allErrors).length > 0) {
-      setError(allErrors);
-      setValid(false);
-
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Please fill all required fields correctly!",
-        confirmButtonColor: "#2F5C4E",
-      });
-
-      return;
-    }
-
-    console.log("Form Data:", formData);
-
     emailjs
       .send(
-        "service_xq04glg", // from EmailJS
-        "template_jy2u90d", // from EmailJS
+        "service_xq04glg", // EmailJS service ID
+        "template_jy2u90d", // Template ID
         formData,
-        "XgiLvulQ_qgPGI3Pt" // from EmailJS
+        "XgiLvulQ_qgPGI3Pt" // User ID
       )
       .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
           Swal.fire({
             icon: "success",
-            title: "Success!",
-            text: "Your form has been submitted successfully 🎉",
-            confirmButtonColor: "#2F5C4E",
+            title: "Message Sent!",
+            text: "We’ll get back to you within 24 hours.",
+            confirmButtonColor: "#065F46",
           });
           setFormData({
             category: "",
@@ -119,18 +50,18 @@ const ContactForm = () => {
             message: "",
           });
         },
-        (error) => {
-          console.error("FAILED...", error);
+        () => {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong. Please try again later!",
-            confirmButtonColor: "#2F5C4E",
+            text: "Something went wrong. Please try again later.",
+            confirmButtonColor: "#065F46",
           });
         }
       );
+  };
 
-    // Reset form
+  const handleClear = () => {
     setFormData({
       category: "",
       firstName: "",
@@ -138,187 +69,145 @@ const ContactForm = () => {
       email: "",
       phone: "",
       whatsapp: "",
-      martialArtsExp: "",
       message: "",
     });
   };
 
   return (
-    <>
-      <section className="bg-[#FFFCF5] flex justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-5xl bg-[#EDEAE0] mt-20 rounded-2xl shadow-md p-8 sm:p-10 md:p-12">
-          {/* Logo + Title */}
-          <div className="flex items-center mb-6">
-            <img
-              src="/logo.png"
-              alt="YogKalariSamriddhi"
-              className="h-8 w-8 mr-3"
-            />
-            <span className="text-2xl font-tunito text-[#065F46] tracking-wide">
-              YOGKALARISAMRIDDHI
-            </span>
+    <section className="py-30 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-8">
+        {/* Left Card - 40% */}
+        <div className="md:col-span-5 bg-[#EDEAE0] rounded-2xl shadow-md p-8 md:p-12">
+          <h2 className="text-5xl font-semibold text-green-900 leading-tight mb-6">
+            DISCUSS <br /> WITH <br /> US
+          </h2>
+          <p className="text-gray-700 mb-6">Don&apos;t be afraid. Say hello!</p>
+
+          <div className="mb-4">
+            <p className="font-semibold text-gray-800">Phone</p>
+            <a
+              href="tel:+971563440979"
+              className="text-green-700 hover:underline"
+            >
+              +971 563440979
+            </a>
           </div>
 
-          {/* Heading */}
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+          <div>
+            <p className="font-semibold text-gray-800">Gmail</p>
+            <a
+              href="mailto:yogkalarisamriddhi@gmail.com"
+              className="text-green-700 hover:underline"
+            >
+              yogkalarisamriddhi@gmail.com
+            </a>
+          </div>
+        </div>
+
+        {/* Right Card - 60% */}
+        <div className="md:col-span-7 bg-[#EDEAE0] rounded-2xl shadow-md p-8 md:p-12">
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">
             Send us a Message
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Fill out the form below and we'll get back to you within 24 hours.
+          </h3>
+          <p className="text-gray-600 mb-6">
+            Fill out the form below and we&apos;ll get back to you within 24
+            hours
           </p>
 
-          {/* Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-          >
-            {/* Select Category */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Select Category
-              </label>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Row 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <select
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               >
-                <option value="">Select</option>
+                <option value="">Select Category</option>
                 <option value="Yoga">Yoga</option>
                 <option value="Kalari">Kalari</option>
                 <option value="Terrariums">Terrariums</option>
               </select>
-              {error.category && (
-                <p className="text-red-500 text-sm mt-1">{error.category}</p>
-              )}
-            </div>
 
-            {/* First Name */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                First Name
-              </label>
               <input
                 type="text"
                 name="firstName"
+                placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleChange}
-                placeholder="First Name"
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               />
-              {error.firstName && (
-                <p className="text-red-500 text-sm mt-1">{error.firstName}</p>
-              )}
-            </div>
 
-            {/* Last Name */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Last Name
-              </label>
               <input
                 type="text"
                 name="lastName"
+                placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                placeholder="Last Name"
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               />
-              {error.lastName && (
-                <p className="text-red-500 text-sm mt-1">{error.lastName}</p>
-              )}
             </div>
 
-            {/* Phone Number */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Phone Number
-              </label>
+            {/* Row 2 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <input
                 type="tel"
                 name="phone"
+                placeholder="Enter your Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Enter your Phone Number"
-                maxLength={15}
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               />
-              {error.phone && (
-                <p className="text-red-500 text-sm mt-1">{error.phone}</p>
-              )}
-            </div>
 
-            {/* Whatsapp Number */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Whatsapp Number
-              </label>
               <input
                 type="tel"
                 name="whatsapp"
+                placeholder="Enter your WhatsApp Number"
                 value={formData.whatsapp}
                 onChange={handleChange}
-                placeholder="Enter your WhatsApp Number"
-                maxLength={15}
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               />
-              {error.whatsapp && (
-                <p className="text-red-500 text-sm mt-1">{error.whatsapp}</p>
-              )}
-            </div>
 
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Email
-              </label>
               <input
                 type="email"
                 name="email"
+                placeholder="Enter your Email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your Email"
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border rounded-md"
               />
-              {error.email && (
-                <p className="text-red-500 text-sm mt-1">{error.email}</p>
-              )}
             </div>
 
             {/* Message */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Enter your message"
-                rows={4}
-                className="w-full px-4 py-2 border rounded-md outline-none text-gray-700 focus:ring-2 focus:ring-green-700"
-              />
-            </div>
+            <textarea
+              name="message"
+              placeholder="Enter your Message"
+              rows={4}
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
 
-            {/* Submit Button */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-end mt-4">
+            {/* Buttons */}
+            <div className="flex justify-end gap-4">
+              <button
+                type="button"
+                onClick={handleClear}
+                className="px-6 py-2 border border-green-800 text-green-800 rounded-full hover:bg-green-50"
+              >
+                Clear
+              </button>
               <button
                 type="submit"
-                className={`${
-                  valid
-                    ? "bg-green-800 hover:bg-green-900"
-                    : "bg-gray-400 cursor-not-allowed"
-                } text-white px-6 py-2 rounded-full transition-all`}
-                disabled={!valid}
+                className="px-6 py-2 bg-green-800 text-white rounded-full hover:bg-green-900"
               >
                 Submit
               </button>
             </div>
           </form>
         </div>
-      </section>
-      <MarqueeBanner />
-    </>
+      </div>
+    </section>
   );
 };
 

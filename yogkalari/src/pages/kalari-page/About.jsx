@@ -1,7 +1,7 @@
 import React from "react";
 const KalaripayattuDetails = () => {
   return (
-    <section className="bg-[#FFFCF5] px-6 sm:px-10 md:px-16 lg:px-24 py-16 text-gray-800 font-sans leading-relaxed">
+    <section className=" px-6 sm:px-10 md:px-16 lg:px-24 py-16 text-gray-800 font-sans leading-relaxed">
       {/* Intro Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Column */}
