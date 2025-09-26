@@ -10,7 +10,10 @@ const YogaFooter = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-4 text-center sm:text-left">
             <div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 tracking-wide leading-tight">
+              <h3
+                className="text-lg sm:text-xl md:text-xl font-bold text-[#084C2E] tracking-wide leading-tight"
+                style={{ fontFamily: "Clash Display, sans-serif" }}
+              >
                 YOGKALARISAMRIDDHI
               </h3>
               <p className="text-sm text-gray-600 italic mt-2">
@@ -109,7 +112,6 @@ const YogaFooter = () => {
                   Terrariums
                 </Link>
               </li>
-            
             </ul>
           </div>
 
