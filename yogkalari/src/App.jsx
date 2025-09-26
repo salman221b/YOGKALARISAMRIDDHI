@@ -7,9 +7,10 @@ import YogaFooter from "./components/YogaFooter";
 import MainPage from "./pages/yoga-page/MainPage";
 import KalariPage from "./pages/kalari-page/MainPage";
 import HomePage from "./pages/main-page/MainPage";
-import TerrariumsPage from './pages/terrarium-page/MainPage';
+import TerrariumsPage from "./pages/terrarium-page/MainPage";
 import ContactForm from "./pages/contact-form/Contact";
 import ScrollUp from "./components/ScrollUp";
+import ProductDetails from "./pages/terrarium-page/ProductDetails";
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/kalari" element={<KalariPage />} />
         <Route path="/yoga" element={<MainPage />} />
-        <Route path="/terrariums" element={<TerrariumsPage/>} />
+        <Route path="/terrariums" element={<TerrariumsPage />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
       <YogaFooter />

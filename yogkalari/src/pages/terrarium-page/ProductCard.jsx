@@ -1,46 +1,12 @@
 import React from "react";
 import { Star } from "lucide-react";
-
-const products = [
-  {
-    id: 1,
-    name: "Ankur (The Seeded Beginning)",
-    price: "AED 160",
-    image:
-      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1757153522/9e935f936294a2248fbe5d51c4ae962a294a0747_yoip4p.jpg",
-    rating: 4.8,
-    reviews: "(1000+)",
-  },
-  {
-    id: 2,
-    name: "Sthira (The Grounded Grove)",
-    price: "AED 160",
-    image:
-      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1757153589/2d9b6dbf0d0e772d2b4f5a4c8cb6ac512b26296a_n21g7j.jpg",
-    rating: 4.9,
-    reviews: "(700+)",
-  },
-  {
-    id: 3,
-    name: "Ārāma (The Sacred Forest)",
-    price: "AED 160",
-    image:
-      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1757153611/d06f7beab4cc6daf401260e3c5235291560de87e_mrsiri.jpg",
-    rating: 3.7,
-    reviews: "(500+)",
-  },
-  {
-    id: 4,
-    name: "Vana Kavacha (The Forest Shield)",
-    price: "AED 160",
-    image:
-      "https://res.cloudinary.com/dpjfm1pha/image/upload/v1757153652/182bec551d38436dcfb4352b31d485dcebdecedf_1_fxreyo.jpg",
-    rating: 4.9,
-    reviews: "(100+)",
-  },
-];
+import { useNavigate } from "react-router-dom";
+import { products } from "../../data/products";
+import Marquee from "./Marquee";
 
 const ProductCard = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-[#F6F3EB] py-10">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,7 +14,8 @@ const ProductCard = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className=" rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden cursor-pointer"
+              onClick={() => navigate(`/products/${product.id}`)}
             >
               {/* Product Image */}
               <div className="relative w-full h-72">
@@ -100,6 +67,9 @@ const ProductCard = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-10">
+        <Marquee />
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235,0.7)] backdrop-blur-md">
+    <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235)] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         <div className="flex justify-between items-center h-16">
           {/* Left - Logo */}
@@ -29,7 +29,10 @@ const Navbar = () => {
           </Link>
 
           {/* Middle - Desktop Links */}
-          <ul className="hidden md:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-2 rounded-full">
+          <ul
+            className="hidden md:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-2 rounded-full"
+            style={{ height: "50px" }}
+          >
             {links.map((link) => (
               <li key={link.path}>
                 <Link
@@ -50,7 +53,7 @@ const Navbar = () => {
           {/* Right - WhatsApp Button */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/919633772040?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+              href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
@@ -94,7 +97,7 @@ const Navbar = () => {
 
         {/* WhatsApp Button - Mobile */}
         <a
-          href="https://wa.me/919633772040?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+          href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"

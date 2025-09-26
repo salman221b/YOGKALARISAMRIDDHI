@@ -41,19 +41,18 @@ const HeroSection = () => {
       </div>
 
       {/* Text Content */}
-      <div className="max-w-7xl mx-2 sm:mx-5  md:mx-20 mt-12 px-6">
+      <div className="max-w-5xl mx-2 sm:mx-5  md:mx-20 mt-12 px-6">
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#084C2E] tracking-wide"
+          className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#084C2E] tracking-wide"
           style={{
-            fontFamily: "Josefin Sans, sans-serif",
-            letterSpacing: "0.1em",
+            fontFamily: "Clash Display, sans-serif",
           }}
         >
           SAMRIDDHI COLLECTIONS
         </h1>
         <p
-          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-md md:text-lg "
-          style={{ fontFamily: "Nunito, sans-serif" }}
+          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify"
+          style={{ fontFamily: "IBM Plex Sans, sans-serif" }}
         >
           Each terrarium is handcrafted by Sachin Gurukkal, carrying the focused{" "}
           <span className="italic">prāṇa</span> of an ancient warrior tradition.
@@ -61,8 +60,8 @@ const HeroSection = () => {
           energy, and invite presence.
         </p>
         <p
-          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-md md:text-lg"
-          style={{ fontFamily: "Nunito, sans-serif" }}
+          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify"
+          style={{ fontFamily: "IBM Plex Sans, sans-serif" }}
         >
           They are not decorative items — they are ritual companions. Designed
           around the <span className="italic">pañca mahābhūtas</span>, they work
