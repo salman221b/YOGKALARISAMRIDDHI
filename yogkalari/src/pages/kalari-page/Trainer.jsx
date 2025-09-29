@@ -19,76 +19,66 @@ const Trainer = () => {
 
         {/* Right Content */}
         <div>
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+          {/* Heading */}
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
             Sachin Gurukkal
           </h3>
-          <p className="text-gray-600 italic mt-1">
+          <p className="text-gray-800 font-medium mt-1">
             Traditional Kalari Teacher | Lineage Holder | Movement Guide
           </p>
 
-          {/* Introduction */}
-          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
-            <span className="font-semibold">Sachin Gurukkal, </span>
-            Trained in the{" "}
+          {/* Intro */}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
+            Sachin Gurukkal, trained in the{" "}
             <span className="font-semibold">
               ancient gurukula tradition of Kerala
             </span>
-            , Sachin Gurukkal brings{" "}
+            , brings{" "}
+            <span className="font-semibold">15+ years of expertise</span> in
+            Kalaripayattu instruction, including{" "}
             <span className="font-semibold">
-              15+ years of expertise in Kalaripayattu instruction
+              8 years of immersive teaching in Dubai
             </span>
-            , including{" "}
-            <span className="font-semibold">
-              8 immersive years of teaching in Dubai
-            </span>
-            . His approach offers{" "}
-            <span className="font-semibold">
-              Kalaripayattu as a transformative practice
-            </span>
-            —a dynamic fusion of{" "}
+            . His approach offers Kalaripayattu as a transformative practice—a
+            dynamic fusion of{" "}
             <span className="italic">movement, breathwork,</span> and{" "}
             <span className="italic">inner stillness</span>.
           </p>
 
-          {/* Roots and Philosophy */}
-          <p className="mt-5 text-gray-700 leading-relaxed text-[1.05rem]">
+          {/* Roots */}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
             Rooted in the <span className="font-semibold">marma system</span>{" "}
-            and <span className="font-semibold">temple traditions</span> of
-            southern India, his teaching transmits not just form and technique
-            but also <span className="italic">śarīra śikṣaṇa</span> (body
-            education),{" "}
+            and{" "}
+            <span className="font-semibold">
+              temple traditions of southern India
+            </span>
+            , his teaching transmits not just form and technique but also{" "}
+            <span className="italic">śarīra śikṣaṇa</span> (body education),{" "}
             <span className="font-semibold">energetic discipline</span>, and{" "}
             <span className="font-semibold">grounded awareness</span>.
           </p>
 
           {/* Classes */}
-          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
-            His classes are{" "}
-            <span className="font-semibold">rigorous yet graceful</span>,
-            inviting students of all ages to embody:
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
+            His classes are rigorous yet graceful, inviting students of all ages
+            to embody:
           </p>
-          <ul className="mt-3 space-y-2 text-gray-700 list-disc list-inside text-[1.05rem]">
-            <li>
-              <span className="font-semibold">Strength</span> through surrender
-            </li>
-            <li>
-              <span className="font-semibold">Power</span> through stillness
-            </li>
-            <li>
-              <span className="font-semibold">Discipline</span> through presence
-            </li>
+          <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside text-[1.05rem]">
+            <li>Strength through surrender</li>
+            <li>Power through stillness</li>
+            <li>Discipline through presence</li>
           </ul>
 
           {/* Integration */}
-          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
-            Sachin Gurukkal’s work{" "}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
+            Sachin Gurukkal’s work bridges ancient Kalari wisdom with modern
+            wellness spaces—
             <span className="font-semibold">
-              bridges ancient Kalari wisdom with modern wellness spaces
+              without dilution, without compromise.
             </span>
-            —without dilution, without compromise.
           </p>
 
-          {/* Brand Philosophy */}
+          {/* Brand */}
           <p className="mt-6 font-semibold text-gray-900">
             YogKalariSamriddhi: A Ritual-Rooted Wellness Brand
           </p>
@@ -98,7 +88,7 @@ const Trainer = () => {
             <span className="italic">fire and form of Kalari</span>, every
             offering from YogKalariSamriddhi is:
           </p>
-          <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside text-[1.05rem]">
+          <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside text-[1.05rem]">
             <li>
               <span className="font-semibold">
                 Guided by śāstra and aligned with ṛta
@@ -107,7 +97,7 @@ const Trainer = () => {
             </li>
             <li>
               <span className="font-semibold">
-                Inspired by pañca mahābhūtas
+                Inspired by the pañca mahābhūtas
               </span>{" "}
               — earth, water, fire, air, and space
             </li>
@@ -118,15 +108,14 @@ const Trainer = () => {
             </li>
           </ul>
 
-          {/* Closing Note */}
-          <p className="mt-6 text-gray-700 leading-relaxed text-[1.05rem]">
+          {/* Closing */}
+          <p className="mt-4 text-gray-700 leading-relaxed text-[1.05rem]">
             This is{" "}
             <span className="font-semibold">
               not performance-driven wellness
             </span>
-            . <br />
-            This is{" "}
-            <span className="font-semibold italic">wellness as sādhana</span> —
+            . This is{" "}
+            <span className="italic font-semibold">wellness as sādhana</span> —
             a sacred return to what is essential, timeless, and true.
           </p>
         </div>

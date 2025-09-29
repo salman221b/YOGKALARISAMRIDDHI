@@ -17,9 +17,10 @@ const KalaripayattuDetails = () => {
           </p>
 
           <p className="mb-4">
-            Kalaripayattu is one of the oldest martial traditions in the world —
-            a sophisticated and sacred system of movement, breath, and awareness
-            that originated in Kerala’s ancient temple arenas (khestras).
+            <strong>Kalaripayattu</strong> is one of the oldest{" "}
+            <strong>martial traditions</strong> in the world — a sophisticated
+            and sacred system of movement, breath, and awareness that originated
+            in Kerala’s ancient temple arenas (khestras).
           </p>
           <p className="mb-4">
             More than a fighting style, Kalari is a discipline of self-mastery —
@@ -28,14 +29,16 @@ const KalaripayattuDetails = () => {
           </p>
           <p className="mb-4">
             At YogKalariSamriddhi, our Kalari offerings are guided by Sachin
-            Gurukkal, a respected teacher with 15 years of teaching experience,
-            including the past 8 years in Dubai. Trained in the gurukula system
-            and deeply immersed in both northern and southern Kalari traditions,
-            he brings the rigor of lineage with a rhythm that resonates in
-            modern times.
+            Gurukkal, a respected teacher with{" "}
+            <strong>15 years of teaching experience,</strong>
+            including the past <strong>8 years in Dubai.</strong> Trained in the
+            gurukula system and deeply immersed in both northern and southern
+            Kalari traditions, he brings the rigor of lineage with a rhythm that
+            resonates in modern times.
           </p>
           <p>
-            His approach is rooted in discipline, flow, and precision — making
+            His approach is rooted in{" "}
+            <strong>discipline, flow, and precision — making </strong>
             Kalari accessible for all bodies, while preserving its sacred power.
           </p>
         </div>
@@ -68,23 +71,39 @@ const KalaripayattuDetails = () => {
           </h3>
           <ul className="mt-4 space-y-3 text-gray-700">
             <li>
-              <strong>Śarīra niyantraṇa</strong> — physical control and
-              coordination
+              <strong>
+                {" "}
+                <span className="text-[#94563D]">Śarīra niyantraṇa: </span>
+              </strong>{" "}
+              physical control and coordination
             </li>
             <li>
-              <strong>Śvāsa sādhanā</strong> — breath training and focus
+              <strong>
+                {" "}
+                <span className="text-[#94563D]">Śvāsa sādhanā: </span>
+              </strong>{" "}
+               breath training and focus
             </li>
             <li>
-              <strong>Bala & dhṛtā</strong> — strength, stamina, and grounded
-              power
+              <strong>
+                {" "}
+                <span className="text-[#94563D]">Bala & dhṛtā:</span>
+              </strong>{" "}
+               strength, stamina, and grounded power
             </li>
             <li>
-              <strong>Manas shithilī</strong> — mental clarity, discipline, and
-              stillness
+              <strong>
+                {" "}
+                <span className="text-[#94563D]">Manas shithilī: </span>
+              </strong>{" "}
+               mental clarity, discipline, and stillness
             </li>
             <li>
-              <strong>Aṅga śuddhi</strong> — fluid body awareness and injury
-              prevention
+              <strong>
+                {" "}
+                <span className="text-[#94563D]">Aṅga śuddhi: </span>
+              </strong>{" "}
+               fluid body awareness and injury prevention
             </li>
           </ul>
           <p className="mt-4 text-gray-700">
@@ -98,17 +117,35 @@ const KalaripayattuDetails = () => {
       {/* Who Is It For Section */}
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
-        <div>
-          <h3 className="text-3xl md:text-4xl font-nunito text-[#94563D]">
-            Who is it for
-          </h3>
-          <ul className="mt-4 space-y-3 text-gray-700">
-            <li>Adults seeking strength, agility, and discipline</li>
-            <li>Children building confidence, focus, and rooted movement</li>
-            <li>Dancers, movers, and martial arts enthusiasts</li>
-            <li>Beginners welcome — no prior experience needed</li>
-          </ul>
-        </div>
+       <div>
+  <h3 className="text-3xl md:text-4xl font-semibold text-[#94563D]">
+    Who is it for
+  </h3>
+  <div className="mt-6 space-y-6 text-gray-700 leading-relaxed">
+    <p>
+      <span className="font-semibold text-[#94563D]">Children & Teenagers:</span>{" "}
+      Build śarīra niyantraṇa (body discipline) and manas sthiratā (mental steadiness).
+      Kalari sharpens focus, fosters respect, and nurtures quiet confidence beyond academics.
+    </p>
+    <p>
+      <span className="font-semibold text-[#94563D]">Adults:</span>{" "}
+      Strength with humility, flow with resilience. Women discover empowerment and grace;
+      men develop stamina and composure. For all, Kalari is abhyāsa—a steady discipline
+      that grounds body and mind.
+    </p>
+    <p>
+      <span className="font-semibold text-[#94563D]">Professionals & Entrepreneurs:</span>{" "}
+      In Dubai’s fast pace, Kalari offers a reset. Breath-led movements sharpen focus,
+      release tension, and cultivate leadership through patience, clarity, and inner balance.
+    </p>
+    <p>
+      <span className="font-semibold text-[#94563D]">Seekers of Tradition & Depth:</span>{" "}
+      More than martial practice, Kalari is a living heritage. Rooted in temple kshetras
+      and passed through lineage, it blends movement, breath, and awareness—ancient yet timeless.
+    </p>
+  </div>
+</div>
+
 
         {/* Right Image */}
         <div>

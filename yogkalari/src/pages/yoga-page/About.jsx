@@ -1,45 +1,70 @@
 import React from "react";
+
 const KalaripayattuDetails = () => {
   return (
     <section className="px-6 sm:px-10 md:px-16 lg:px-24 py-16 text-gray-800 font-sans leading-relaxed">
-      {/* Intro Section */}
+      {/* Section 1 - Intro */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
+          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-semibold">
             Yoga Therapy
           </h2>
           <p className="text-[#A97375] italic mt-2 text-lg">
             “शरीरम् आद्यं खलु धर्मसाधनम्”
           </p>
-          <p className="text-gray-700 italic mb-4">
+          <p className="text-gray-700 italic mb-6">
             The body is the foremost instrument for dharma.— Kālidāsa
           </p>
 
           <p className="mb-4">
-            Each session is a sādhanā— a living ritual, adapted to your prakṛti
+            Each session is a sādhanā—a living ritual, adapted to your prakṛti
             (constitution), vikṛti (imbalance), and the ṛtu (season or cycle)
-            you're in. At YogKalariSamriddhi, our approach to yoga is not about
-            flexibility or performance — it is about healing, regulation, and
+            you’re in. At YogKalariSamriddhi, our approach to yoga is not about
+            flexibility or performance—it is about healing, regulation, and
             returning to your unique rhythm.
           </p>
           <p className="mb-4">
-            Led by Sucheta Chadha, an experienced yoga therapist with over 13
-            years of one-on-one practice, this offering is grounded in the yoga
-            śāstra, designed to support both physical recovery and energetic
-            realignment.
+            Led by Sucheta Chadha, an{" "}
+            <strong>
+              experienced yoga therapist with over 13 years of one-on-one
+              practice
+            </strong>
+            , this offering is grounded in the yoga śāstras, designed to support
+            both physical recovery and energetic realignment.
           </p>
           <p className="mb-4">
-            Whether you're navigating a health condition or seeking deeper
+            Whether you’re navigating a health condition or seeking deeper
             connection with your body, our therapeutic programs integrate:
           </p>
-          <p>
-            Āsana — Postural support tailored to your capacity <br />
-            Prāṇāyāma — Breath regulation to restore nervous system balance
-            <br /> Dhyāna — Meditation for clarity and inner quiet
-            <br /> Daily Vihāra Kriyās — Small, accessible rituals for everyday
-            regulation
-          </p>
+          <ul className="space-y-2">
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Āsana:</span>
+              </strong>{" "}
+              Postural support tailored to your capacity
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Prāṇāyāma:</span>
+              </strong>{" "}
+              Breath regulation to restore nervous system balance
+            </li>
+            <li>
+              <strong>
+                {" "}
+                <span className="text-[#A97375]">Dhyāna:</span>
+              </strong>{" "}
+              Meditation for clarity and inner quiet
+            </li>
+            <li>
+              <strong>
+                {" "}
+                <span className="text-[#A97375]">Daily Vihāra Kriyās:</span>
+              </strong>{" "}
+              Small, accessible rituals for everyday regulation
+            </li>
+          </ul>
         </div>
 
         {/* Right Column Image */}
@@ -47,28 +72,28 @@ const KalaripayattuDetails = () => {
           <img
             src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756890082/offering1_tipcfw_3e76c6.jpg"
             alt="Yoga Therapy"
-            className="rounded-lg shadow-lg object-cover w-full h-[600px]"
+            className="rounded-lg shadow-lg object-cover w-full h-[500px] lg:h-[600px]"
           />
         </div>
       </div>
 
-      {/* What Kalari Builds Section */}
-      <div className="mt-16 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center md:flex md:flex-col-reverse">
+      {/* Section 2 - Support Clients */}
+      <div className="mt-20 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center md:flex md:flex-col-reverse">
         {/* Left Image */}
         <div className="sm:order-1">
           <img
             src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756704038/795e8cc62a0e7256200c0ee507bfbd8d6c4a91a7_bzoniw.jpg"
-            alt="Kalari Training"
+            alt="Yoga Therapy Clients"
             className="rounded-lg shadow-lg w-full object-cover"
           />
         </div>
 
         {/* Right Content */}
         <div className="sm:order-2">
-          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
+          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#A97375] font-semibold">
             We support clients with
           </h2>
-          <ul className="mt-4 space-y-3 text-gray-700">
+          <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside">
             <li>
               Hormonal health (PCOS, perimenopause, thyroid, menstrual
               irregularities)
@@ -91,27 +116,72 @@ const KalaripayattuDetails = () => {
         </div>
       </div>
 
-      {/* Who Is It For Section */}
-      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      {/* Section 3 - What Makes Different */}
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-nunito">
+          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#A97375] font-semibold mb-6">
             What makes our Yoga Therapy different?
           </h2>
-          <p>
-            Unlike group classes offering generalized flows, our approach is
-            tailored, introspective, and intentional. We hold space for inquiry,
-            stillness, and sacred nuance — where practice becomes medicine, and
-            your śarīra (body) becomes a temple of awareness.
-          </p>
+          <ul className="space-y-4 text-gray-700">
+            <li>
+              <strong>
+                {" "}
+                <span className="text-[#A97375]">Personal, not generic</span>
+              </strong>{" "}
+              <br />
+              No two sessions are the same. Each practice adapts to your prakṛti
+              (constitution), energy, and life stage.
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Beyond performance</span>
+              </strong>{" "}
+              <br />
+              Yoga here is not about flexibility or poses—it is about śarīra
+              niyantraṇa (body regulation) and inner awareness.
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">A living ritual</span>
+              </strong>{" "}
+              <br />
+              Each session is guided with presence, blending breath, movement,
+              stillness, and subtle practices for real-life balance.
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Energy realignment</span>
+              </strong>{" "}
+              <br />
+              Alongside postures and breathwork, we integrate energy practices
+              that release blocks and restore clarity.
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Calm in a fast city</span>
+              </strong>{" "}
+              <br />
+              Sessions become a sanctuary of steadiness, offering regulation and
+              reconnection in the midst of Dubai’s pace.
+            </li>
+            <li>
+              <strong>
+                <span className="text-[#A97375]">Tradition with relevance</span>
+              </strong>{" "}
+              <br />
+              Rooted in śāstra yet shaped for modern challenges—this is yoga
+              therapy as medicine for body, mind, and spirit.
+            </li>
+          </ul>
         </div>
 
         {/* Right Image */}
         <div>
           <img
             src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756704191/c715afba25082f168a9425be119c5f75bf52e700_1_jzyes8.jpg"
-            alt="Kalari Students"
-            className="rounded-lg shadow-lg w-full object-cover h-[600px]"
+            alt="Meditation"
+            className="rounded-lg shadow-lg w-full object-cover h-[500px] lg:h-[600px]"
           />
         </div>
       </div>

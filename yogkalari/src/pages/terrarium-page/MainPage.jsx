@@ -22,15 +22,37 @@ const HeroSection = () => {
     arrows: true,
     pauseOnHover: true,
     adaptiveHeight: true,
+    centerMode: true, // enable center mode
+    centerPadding: "100px", // show side images (adjust px/% as needed)
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: "20px",
+        },
+      },
+    ],
   };
 
   return (
     <section className="overflow-hidden pt-30">
       {/* Carousel */}
-      <div className="w-full max-w-6xl mx-auto px-4">
+      <div className="w-full mx-auto">
         <Slider {...settings}>
           {images.map((img, index) => (
-            <div key={index} className="flex justify-center items-center">
+            <div key={index} className="flex justify-center items-center px-4">
               <img
                 src={img}
                 alt={`slide-${index}`}
