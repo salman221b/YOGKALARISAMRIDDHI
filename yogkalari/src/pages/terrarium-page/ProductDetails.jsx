@@ -21,7 +21,7 @@ const ProductDetails = () => {
       <div className="text-sm text-gray-500 mb-6 px-26">
         Home &gt; Terrariums &gt; <span className="text-gray-800">Product</span>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
         {/* Left: Product Images */}
         <div>
           <img
