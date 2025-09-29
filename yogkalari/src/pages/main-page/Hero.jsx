@@ -24,6 +24,7 @@ const Hero = () => {
       <button className="transition duration-500 ease-in-out text-[#2F5C4E] px-6 py-2 rounded-full mt-15 mx-auto block border-2 border-[#2F5C4E] cursor-pointer hover:bg-[#2F5C4E] hover:text-white">
         Book An Appointment
       </button>
+
     </div>
   );
 };

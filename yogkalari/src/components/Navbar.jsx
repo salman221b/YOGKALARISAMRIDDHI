@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
-import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +24,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left - Logo */}
           <Link to="/" className="cursor-pointer">
-            <img src={logo} alt="logo" className="h-10 w-10 md:h-12 md:w-12" />
+            <img src="/logo-with-text.png" alt="logo" className="h-15 w-32" />
           </Link>
 
           {/* Middle - Desktop Links */}
           <ul
-            className="hidden md:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-2 rounded-full"
+            className="hidden lg:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-2 rounded-full"
             style={{ height: "50px" }}
           >
             {links.map((link) => (
@@ -51,7 +50,7 @@ const Navbar = () => {
           </ul>
 
           {/* Right - WhatsApp Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <a
               href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
               target="_blank"
@@ -64,7 +63,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon */}
-          <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+          <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
             {isOpen ? (
               <FaTimes size={26} className="text-[#2F5C4E]" />
             ) : (
@@ -76,7 +75,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`bg-[#F6F3EB] md:hidden text-black flex flex-col items-center gap-6 text-lg font-medium absolute w-full left-0 transition-all duration-700 ease-in-out ${
+        className={`bg-[#F6F3EB] lg:hidden text-black flex flex-col items-center gap-6 text-lg font-medium absolute w-full left-0 transition-all duration-700 ease-in-out ${
           isOpen ? "top-16 opacity-100" : "-top-96 opacity-0"
         }`}
       >
