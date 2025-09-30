@@ -143,9 +143,12 @@ const WhispersWellnessPage = () => {
             Let's help you find balance through body, breath, and earth
           </p>
 
-          <button className="bg-transparent border-2 border-[#F5F2EB] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#F5F2EB] hover:text-[#2F5C4E] transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <a
+            className="bg-transparent border-2 border-[#F5F2EB] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#F5F2EB] hover:text-[#2F5C4E] transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            href="tel:+971563440979"
+          >
             Book a Call
-          </button>
+          </a>
         </div>
       </div>
     </div>
