@@ -6,11 +6,9 @@ import FounderSection from "./FounderSection";
 import Marquee from "./Marquee";
 import WhispersWellnessPage from "./WhispersWellnessPage";
 import ScrollToTop from "../../components/ScrollToTop";
-import Maintenance from "../../components/Maintenance";
 
 const MainPage = () => {
   const [loading, setLoading] = useState(true);
-  const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,10 +28,6 @@ const MainPage = () => {
         />
       </div>
     );
-  }
-
-  if (isMaintenance) {
-    return <Maintenance />;
   }
 
   return (

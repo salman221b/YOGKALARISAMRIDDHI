@@ -11,8 +11,14 @@ import TerrariumsPage from "./pages/terrarium-page/MainPage";
 import ContactForm from "./pages/contact-form/Contact";
 import ScrollUp from "./components/ScrollUp";
 import ProductDetails from "./pages/terrarium-page/ProductDetails";
+import Maintenance from "./components/Maintenance";
 
 const App = () => {
+  const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
+
+  if (isMaintenance) {
+    return <Maintenance />; // show maintenance page until password entered
+  }
   return (
     <Router>
       <ScrollUp />
