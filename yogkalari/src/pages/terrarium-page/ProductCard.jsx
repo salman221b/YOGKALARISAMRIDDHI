@@ -34,10 +34,11 @@ const ProductCard = () => {
                 >
                   {product.name}
                 </h3>
+                <p>{product.description}</p>
                 <p className="font-semibold mt-2 text-lg">{product.price}</p>
 
                 {/* Rating */}
-                <div className="flex items-center justify-center mt-2 space-x-1">
+                {/* <div className="flex items-center justify-center mt-2 space-x-1">
                   {Array.from({ length: 5 }, (_, i) => (
                     <Star
                       key={i}
@@ -52,15 +53,15 @@ const ProductCard = () => {
                   <span className="ml-1 text-sm text-gray-600">
                     {product.reviews}
                   </span>
-                </div>
+                </div> */}
 
                 {/* Buttons */}
                 <div className="flex justify-center gap-3 mt-4">
-                  <button className="bg-[#016241] text-white px-4 py-2 rounded-lg text-sm transition-colors duration-300 shadow">
+                  {/* <button className="bg-[#016241] text-white px-4 py-2 rounded-lg text-sm transition-colors duration-300 shadow">
                     Buy Now
-                  </button>
+                  </button> */}
                   <button className="border border-[#016241] text-[#016241] hover:bg-[#016241] hover:text-white px-4 py-2 rounded-lg text-sm transition-colors duration-300 shadow">
-                    Add to Cart
+                    Details
                   </button>
                 </div>
               </div>

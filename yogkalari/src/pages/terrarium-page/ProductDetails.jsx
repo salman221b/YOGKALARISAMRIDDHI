@@ -9,8 +9,7 @@ const ProductDetails = () => {
   const product = products.find((p) => p.id === parseInt(id));
 
   const [selectedImage, setSelectedImage] = useState(product?.image);
-  const [size, setSize] = useState("Ārāma");
-  const [quantity, setQuantity] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (!product) {
     return <div className="p-10 text-center">Product not found.</div>;
@@ -51,104 +50,172 @@ const ProductDetails = () => {
 
         {/* Right: Product Info */}
         <div>
+          {/* Title */}
           <h1 className="text-2xl font-bold text-green-800">{product.name}</h1>
+
+          {/* Short Description */}
           <p className="mt-2 text-gray-700">
             Anchored by a traditional multicolour brass Ganesha, this terrarium
             is both devotional and timeless. Brass is long revered for stability
             and abundance.
           </p>
 
-          <p className="italic text-gray-500 text-sm mt-2">
-            Includes a digital care guide. Full instructions on our{" "}
-            <span className="underline cursor-pointer">
-              Terrarium Care Page
+          {/* Placement, Gifting, Uniqueness */}
+          <div className="mt-4 space-y-2 text-gray-700">
+            <p>
+              <span className="font-semibold">Placement:</span> Desks, bedside,
+              or children’s rooms.
+            </p>
+            <p>
+              <span className="font-semibold">Gifting:</span> Ideal for
+              graduations or new jobs.
+            </p>
+            <p>
+              <span className="font-semibold">Uniqueness:</span> 3 pieces
+              currently in stock.
+            </p>
+          </div>
+
+          {/* Care Guide Link */}
+          <p className="italic text-gray-500 text-sm mt-3">
+            Includes a digital care guide. For full instructions click{" "}
+            <span
+              className="underline cursor-pointer text-blue-600"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Terrariums Care Instructions
             </span>
-            .
           </p>
 
           {/* Price & Stock */}
-          <div className="mt-4">
-            <p className="text-2xl font-semibold">{product.price}</p>
+          <div className="mt-6">
+            <p className="text-2xl font-semibold"> {product.price}</p>
             <p className="text-red-600 text-sm mt-1">
               Hurry Up! Only 3 Pieces left
             </p>
           </div>
 
-          {/* Size Selector */}
-          <div className="mt-6">
-            <h3 className="font-semibold text-gray-700">Select Size</h3>
-            <div className="flex gap-3 mt-2">
-              {["Ārāma", "Ankur", "Large"].map((option) => (
-                <button
-                  key={option}
-                  onClick={() => setSize(option)}
-                  className={`px-4 py-1 rounded-full border ${
-                    size === option
-                      ? "bg-green-800 text-white border-green-800"
-                      : "border-gray-400 text-gray-600 hover:border-green-700"
-                  }`}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Quantity Selector */}
-          <div className="mt-6">
-            <h3 className="font-semibold text-gray-700">Select Quantity</h3>
-            <div className="flex items-center gap-4 mt-2">
-              <button
-                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                className="px-3 py-1 border rounded-xl"
-              >
-                −
-              </button>
-              <span className="text-lg font-semibold w-6 text-center">
-                {quantity.toString().padStart(2, "0")}
-              </span>
-              <button
-                onClick={() => setQuantity((q) => q + 1)}
-                className="px-3 py-1 border rounded-xl"
-              >
-                +
-              </button>
-            </div>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex gap-4 mt-8">
-            <button className="bg-green-800 text-white px-6 py-3 rounded-lg shadow hover:bg-green-900">
+          {/* Buy Button */}
+          <div className="mt-4">
+            <a
+              href={`https://wa.me/971563440979?text=Hello, I am enquiring about the product *${product.name}* priced at *${product.price}*. Can you share more details?`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-800 text-white px-8 py-3 rounded-full shadow hover:bg-green-900 inline-block text-center"
+            >
               Buy Now
-            </button>
-            <button className="border border-green-800 text-green-800 hover:bg-green-800 hover:text-white px-6 py-3 rounded-lg shadow">
-              Add to Cart
-            </button>
+            </a>
           </div>
 
-          {/* Description Section */}
-          <div className="mt-10 space-y-4 text-gray-700">
-            <h3 className="font-bold text-lg">Description</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Placement: Desks, bedside, or children’s rooms.</li>
-              <li>Gifting: Ideal for graduations or new jobs.</li>
-              <li>Uniqueness: 3 pieces currently in stock.</li>
-            </ul>
+          {/* Why Sections */}
+          <div className="mt-8 space-y-6 text-gray-700">
+            <div>
+              <h3 className="font-bold">Why Brass Ganesha?</h3>
+              <p>
+                Heritage material with auspicious energy. Carries durability and
+                sacred longevity.
+              </p>
+            </div>
 
-            <h3 className="font-bold text-lg mt-6">Why Brass Ganesha?</h3>
-            <p>
-              Heritage material with auspicious energy. Carries durability and
-              sacred longevity.
-            </p>
+            <div>
+              <h3 className="font-bold">Why Ārāma?</h3>
+              <p>
+                Layered greens and moss evoke a forest temple, turning this
+                terrarium into a devotional centerpiece.
+              </p>
+            </div>
 
-            <h3 className="font-bold text-lg mt-6">Key Features</h3>
-            <p>
-              Handcrafted terrarium with brass idol, long-lasting greenery, and
-              minimal maintenance.
-            </p>
+            <div>
+              <h3 className="font-bold">
+                If you have any questions please get in touch with us!
+              </h3>
+            </div>
           </div>
         </div>
       </div>
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white max-w-2xl w-full rounded-lg shadow-lg p-6 relative overflow-y-auto max-h-[90vh]">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-3 right-3 text-gray-600 hover:text-black text-xl font-bold"
+            >
+              ✕
+            </button>
+
+            {/* Modal Content */}
+            <h2 className="text-xl font-bold text-green-800 mb-4">
+              Care Instructions
+            </h2>
+            <ul className="space-y-2 text-gray-700">
+              <li>
+                <span className="font-semibold">Light:</span> Place in indirect
+                sunlight & near AC. Monitor the condensation cycle.
+              </li>
+              <li>
+                <span className="font-semibold">Water:</span> Mist when the soil
+                feels dry to the touch.
+              </li>
+              <li>
+                <span className="font-semibold">Trim:</span> Prune excess growth
+                and propagate if you wish!
+              </li>
+              <li>
+                <span className="font-semibold">Clean:</span> Use a paper towel
+                to wipe the glass for a clear view.
+              </li>
+              <li>
+                <span className="font-semibold">Air:</span> Open the lid for
+                5–10 minutes daily to allow ventilation. It’s designed for easy
+                upkeep.
+              </li>
+            </ul>
+
+            <h2 className="text-xl font-bold text-green-800 mt-6 mb-4">
+              Terms & Conditions
+            </h2>
+            <p className="text-gray-700 mb-2">
+              Plant Replacement Guarantee: If the plants in your Samriddhi
+              Terrarium begin to show signs of deterioration within 7 days from
+              the date of purchase, please contact us immediately.
+            </p>
+
+            <p className="text-gray-700 mb-2">
+              <span className="font-semibold">Exemptions:</span> The guarantee
+              does not apply if the terrarium has been:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Placed in direct sunlight</li>
+              <li>Kept in a non-air-conditioned room</li>
+              <li>The jar has been left open for more than 05–10 minutes</li>
+              <li>
+                Any owner-related damage, such as breaking the jar or
+                mishandling the plants or items inside
+              </li>
+            </ul>
+
+            <p className="text-gray-700 mt-4">
+              Post 7-Day Replacement: If any component of the terrarium (plants,
+              jar, statue, etc.) requires replacement after the 7-day period, we
+              are happy to assist. However, charges will apply for:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Time</li>
+              <li>Delivery</li>
+              <li>Replacement of plants, jar, statue, or any other item</li>
+            </ul>
+
+            <p className="mt-4 text-gray-700">
+              Care Instructions: To ensure the longevity of your Samriddhi
+              Terrarium, please follow the care guide tips provided at the time
+              of purchase. If you have any further questions, feel free to
+              contact us for guidance.
+            </p>
+          </div>
+        </div>
+      )}
       <div className="mt-10">
         <Marquee />
       </div>

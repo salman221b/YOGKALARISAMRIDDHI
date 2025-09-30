@@ -1,7 +1,60 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Star } from "lucide-react"; // for star icons
+
+const testimonials = [
+  {
+    name: "Nishad Somanathan",
+    initials: "NS",
+    title: "A Transformative Experience",
+    content:
+      "My son and daughter have been attending Kalari lessons for the past two years @YogKalariSamriddhi, and the experience has been phenomenal. They have developed a strong physique and improved concentration levels. These lessons have significantly boosted their performance in sports and academics.",
+  },
+  {
+    name: "Dilipkumar Sasidharan",
+    initials: "DS",
+    title: "Impressive Growth",
+    content:
+      "My child is really enjoying his Kaleri with his master. He didn’t have any base in the beginning but he really improved a lot. Thanks to Sachin Master.",
+  },
+  {
+    name: "Ahana Mehta",
+    initials: "AM",
+    title: "Loved by the Kids",
+    content:
+      "Children love doing it, it has improved their flexibility and focus and is good for strengthening their body.",
+  },
+  {
+    name: "Nethra Gneshan",
+    initials: "NG",
+    title: "Strong & Focused",
+    content:
+      "I’ve been learning Kalaripayattu with Sachin Gurukkal for about 4 years now, and it’s been an incredible experience. His deep knowledge and skill in Kalari make every class both challenging and rewarding.",
+  },
+  {
+    name: "Nirupama R",
+    initials: "NR",
+    title: "A Blessing",
+    content:
+      "Learning Kalaripayattu, the ancient martial art of India, in Dubai under Sachin Sir has been a true blessing. For me, starting this art later in life has reignited confidence and discipline.",
+  },
+];
 const BenefitsSection = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    adaptiveHeight: true,
+  };
   const benefits = [
     {
       title: "Physical Strength",
@@ -54,36 +107,66 @@ const BenefitsSection = () => {
         <h3 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D] mb-6">
           Whispers of Wellness
         </h3>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-8">
-          {/* Left Side Text */}
-          <p className="text-lg text-gray-900 md:w-1/2 leading-relaxed">
-            Every word shared here is a quiet echo of trust, transformation, and
-            timeless care. Our clients don’t just experience a service; they
-            step into a philosophy.
-          </p>
-
-          {/* Testimonial Card */}
-          <div className="bg-white rounded-xl shadow-md p-6 md:w-1/2">
-            <FaQuoteLeft className="text-gray-300 text-3xl mb-3" />
-            <h4 className="font-semibold text-lg">
-              The Experience was awesome
-            </h4>
-            <p className="text-gray-600 text-sm mt-2">
-              Lorem ipsum is a dummy or placeholder text commonly used in
-              graphic design, publishing, and web development. Its purpose is to
-              permit a page layout to be designed, independently of the copy
-              that will subsequently populate it.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side - Description */}
+          <div className="space-y-6">
+            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+              Every word shared here is a quiet echo of trust, transformation,
+              and timeless care. Our clients don't just experience a service;
+              they step into a philosophy.
             </p>
-            <div className="flex items-center justify-between mt-4">
-              {/* Avatar & Name */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gray-300 rounded-full" />
-                <div>
-                  <p className="font-semibold text-gray-800">John Doe</p>
-                </div>
-              </div>
-              {/* Stars */}
-              <div className="text-[#f97316] text-lg">★★★★☆</div>
+          </div>
+
+          {/* Right Side - Testimonials Slider */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-md">
+              <Slider {...settings}>
+                {testimonials.map((t, i) => (
+                  <div key={i}>
+                    <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                      {/* Quotation mark */}
+                      <div className=" text-[#2F5C4E] mb-3">
+                        <img
+                          src="/quotes.png"
+                          alt="Quotation Mark"
+                          className="w-6 h-6"
+                        />
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        {t.title}
+                      </h3>
+
+                      {/* Content */}
+                      <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                        {t.content}
+                      </p>
+
+                      {/* Footer */}
+                      <div className="flex items-center gap-3">
+                        {/* Avatar */}
+                        <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-semibold text-gray-700">
+                          {t.initials}
+                        </div>
+
+                        {/* Name + Stars */}
+                        <div>
+                          <p className="font-medium text-gray-800">{t.name}</p>
+                          <div className="flex text-yellow-500">
+                            {[...Array(5)].map((_, idx) => (
+                              <Star
+                                key={idx}
+                                className="w-4 h-4 fill-yellow-500"
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const App = () => {
   const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
 
   if (isMaintenance) {
-    return <Maintenance />; // show maintenance page until password entered
+    return <Maintenance />;
   }
   return (
     <Router>
