@@ -6,12 +6,13 @@ import FounderSection from "./FounderSection";
 import Marquee from "./Marquee";
 import WhispersWellnessPage from "./WhispersWellnessPage";
 import ScrollToTop from "../../components/ScrollToTop";
+import Maintenance from "../../components/Maintenance";
 
 const MainPage = () => {
   const [loading, setLoading] = useState(true);
+  const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
 
   useEffect(() => {
-    // Show loader for 3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -30,6 +31,11 @@ const MainPage = () => {
       </div>
     );
   }
+
+  if (isMaintenance) {
+    return <Maintenance />;
+  }
+
   return (
     <div>
       <Hero />
