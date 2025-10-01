@@ -44,21 +44,19 @@ const FounderCards = () => {
             </div>
 
             {/* Content (Before Hover) */}
-            <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
-              <h3 className="text-xl font-semibold text-gray-900">
-                {founder.name}
-              </h3>
-              <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                {founder.description}
-              </p>
-              <HashLink
-                smooth
-                className="mt-3 text-green-700 font-medium hover:underline"
-                to={founder.link}
-              >
-                Know More
-              </HashLink>
-            </div>
+            <HashLink smooth to={founder.link}>
+              <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {founder.name}
+                </h3>
+                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                  {founder.description}
+                </p>
+                <p className="mt-3 text-green-700 font-medium hover:underline">
+                  Know More
+                </p>
+              </div>
+            </HashLink>
 
             {/* Hover Overlay */}
             <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
