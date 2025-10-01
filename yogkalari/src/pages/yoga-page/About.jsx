@@ -2,18 +2,16 @@ import React from "react";
 
 const KalaripayattuDetails = () => {
   return (
-    <section className="px-6 sm:px-10 md:px-16 lg:px-24 py-16 text-gray-800 font-sans leading-relaxed">
+    <section className="px-6 sm:px-10 md:px-16 lg:px-24 py-16 leading-relaxed ">
       {/* Section 1 - Intro */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[36px] text-[#A97375] font-semibold">
-            Yoga Therapy
-          </h2>
-          <p className="text-[#A97375] italic mt-2 text-lg">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#B15D6E] font-semibold">
             “शरीरम् आद्यं खलु धर्मसाधनम्”
-          </p>
-          <p className="text-gray-700 italic mb-6">
+          </h2>
+
+          <p className="text-[#B15D6E] mb-6">
             The body is the foremost instrument for dharma.— Kālidāsa
           </p>
 
@@ -40,27 +38,27 @@ const KalaripayattuDetails = () => {
           <ul className="space-y-2">
             <li>
               <strong>
-                <span className="text-[#A97375]">Āsana:</span>
+                <span className="text-[#B15D6E]">Āsana:</span>
               </strong>{" "}
               Postural support tailored to your capacity
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">Prāṇāyāma:</span>
+                <span className="text-[#B15D6E]">Prāṇāyāma:</span>
               </strong>{" "}
               Breath regulation to restore nervous system balance
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#A97375]">Dhyāna:</span>
+                <span className="text-[#B15D6E]">Dhyāna:</span>
               </strong>{" "}
               Meditation for clarity and inner quiet
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#A97375]">Daily Vihāra Kriyās:</span>
+                <span className="text-[#B15D6E]">Daily Vihāra Kriyās:</span>
               </strong>{" "}
               Small, accessible rituals for everyday regulation
             </li>
@@ -90,10 +88,10 @@ const KalaripayattuDetails = () => {
 
         {/* Right Content */}
         <div className="sm:order-2">
-          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#A97375] font-semibold">
+          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#B15D6E] font-semibold">
             We support clients with
           </h2>
-          <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside">
+          <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside pb-10">
             <li>
               Hormonal health (PCOS, perimenopause, thyroid, menstrual
               irregularities)
@@ -120,14 +118,14 @@ const KalaripayattuDetails = () => {
       <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#A97375] font-semibold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#B15D6E] font-semibold mb-6">
             What makes our Yoga Therapy different?
           </h2>
           <ul className="space-y-4 text-gray-700">
             <li>
               <strong>
                 {" "}
-                <span className="text-[#A97375]">Personal, not generic</span>
+                <span className="text-[#B15D6E]">Personal, not generic</span>
               </strong>{" "}
               <br />
               No two sessions are the same. Each practice adapts to your prakṛti
@@ -135,7 +133,7 @@ const KalaripayattuDetails = () => {
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">Beyond performance</span>
+                <span className="text-[#B15D6E]">Beyond performance</span>
               </strong>{" "}
               <br />
               Yoga here is not about flexibility or poses—it is about śarīra
@@ -143,7 +141,7 @@ const KalaripayattuDetails = () => {
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">A living ritual</span>
+                <span className="text-[#B15D6E]">A living ritual</span>
               </strong>{" "}
               <br />
               Each session is guided with presence, blending breath, movement,
@@ -151,7 +149,7 @@ const KalaripayattuDetails = () => {
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">Energy realignment</span>
+                <span className="text-[#B15D6E]">Energy realignment</span>
               </strong>{" "}
               <br />
               Alongside postures and breathwork, we integrate energy practices
@@ -159,7 +157,7 @@ const KalaripayattuDetails = () => {
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">Calm in a fast city</span>
+                <span className="text-[#B15D6E]">Calm in a fast city</span>
               </strong>{" "}
               <br />
               Sessions become a sanctuary of steadiness, offering regulation and
@@ -167,7 +165,7 @@ const KalaripayattuDetails = () => {
             </li>
             <li>
               <strong>
-                <span className="text-[#A97375]">Tradition with relevance</span>
+                <span className="text-[#B15D6E]">Tradition with relevance</span>
               </strong>{" "}
               <br />
               Rooted in śāstra yet shaped for modern challenges—this is yoga

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import YogaFooter from "./components/YogaFooter";
@@ -14,11 +14,33 @@ import ProductDetails from "./pages/terrarium-page/ProductDetails";
 import Maintenance from "./components/Maintenance";
 
 const App = () => {
-  const isMaintenance = import.meta.env.VITE_MAINTENANCE_MODE === "true";
+  const launchDate = new Date("2025-10-02T09:00:00").getTime();
+  const now = new Date().getTime();
+  const [loading, setLoading] = useState(true);
 
-  if (isMaintenance) {
-    return <Maintenance />;
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="w-24 h-24 animate-scale-up"
+        />
+      </div>
+    );
   }
+  if (now < launchDate) {
+    return <Maintenance launchDate={launchDate} />;
+  }
+
   return (
     <Router>
       <ScrollUp />

@@ -132,10 +132,10 @@ const ContactForm = () => {
                 <div>
                   <p className="font-semibold text-base mb-1">E-mail</p>
                   <a
-                    href="mailto:yogkalarisamriddhi@gmail.com"
+                    href="mailto:info@yogkalarisamriddhi.com"
                     className="text-base hover:underline"
                   >
-                    yogkalarisamriddhi@gmail.com
+                   info@yogkalarisamriddhi.com
                   </a>
                 </div>
               </div>

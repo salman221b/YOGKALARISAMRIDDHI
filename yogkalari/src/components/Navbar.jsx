@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235)] backdrop-blur-md">
+    <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235)] backdrop-blur-md py-1">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         <div className="flex justify-between items-center h-16">
           {/* Left - Logo */}
@@ -29,7 +29,7 @@ const Navbar = () => {
 
           {/* Middle - Desktop Links */}
           <ul
-            className="hidden lg:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-2 rounded-full"
+            className="hidden lg:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-3 rounded-full"
             style={{ height: "50px" }}
           >
             {links.map((link) => (
@@ -43,7 +43,7 @@ const Navbar = () => {
                       : "text-black hover:text-[#2F5C4E]"
                   }`}
                 >
-                  <span className="font-nunito">{link.label}</span>
+                  <span>{link.label}</span>
                 </Link>
               </li>
             ))}
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`bg-[#F6F3EB] lg:hidden text-black flex flex-col items-center gap-6 text-lg font-medium absolute w-full left-0 transition-all duration-700 ease-in-out ${
-          isOpen ? "top-16 opacity-100" : "-top-96 opacity-0"
+          isOpen ? "top-16 opacity-100 pb-5" : "-top-96 opacity-0"
         }`}
       >
         {links.map((link) => (

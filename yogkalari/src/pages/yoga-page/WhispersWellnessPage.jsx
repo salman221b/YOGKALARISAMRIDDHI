@@ -7,45 +7,45 @@ import { Star } from "lucide-react"; // for star icons
 
 const testimonials = [
   {
-    name: "Nishad Somanathan",
-    initials: "NS",
+    name: "Apurva Sarin",
+    initials: "AS",
     title: "A Transformative Experience",
     content:
-      "My son and daughter have been attending Kalari lessons for the past two years @YogKalariSamriddhi, and the experience has been phenomenal. They have developed a strong physique and improved concentration levels. These lessons have significantly boosted their performance in sports and academics.",
+      "I am so glad I took this hormone reset workshop. There was so much to learn and I felt absolutely rejuvenated after the abhyas and breath work. Sucheta is an amazing instructor and person! Really understands the pulse of her students. ❤",
   },
   {
-    name: "Dilipkumar Sasidharan",
-    initials: "DS",
+    name: "NAMRATA KHUBCHANDANI",
+    initials: "NK",
     title: "Impressive Growth",
     content:
-      "My child is really enjoying his Kaleri with his master. He didn’t have any base in the beginning but he really improved a lot. Thanks to Sachin Master.",
+      "Sucheta is all. Learning yoga with her has helped me recover from my thyroid issues, be happier and stronger physically and mentally. She's one of the best combination of a teacher and friend ",
   },
   {
-    name: "Ahana Mehta",
-    initials: "AM",
-    title: "Loved by the Kids",
+    name: "Sindhu Sudhir",
+    initials: "SS",
+    title: "Enriching Experience",
     content:
-      "Children love doing it, it has improved their flexibility and focus and is good for strengthening their body.",
+      "My yoga journey with Sucheta has been a very enriching experience. I have evolved as a person, improved my fitness and endurance levels through her guidance. Would recommend her in a heartbeat.",
   },
   {
-    name: "Nethra Gneshan",
-    initials: "NG",
+    name: "Hitesh Shahani",
+    initials: "HS",
     title: "Strong & Focused",
     content:
-      "I’ve been learning Kalaripayattu with Sachin Gurukkal for about 4 years now, and it’s been an incredible experience. His deep knowledge and skill in Kalari make every class both challenging and rewarding.",
+      "Sucheta helped me believe that sciatica can be worked upon too and relieve the pain. Her understanding and patience helped me to get rid of pain and be able to practice stretches and poses on my own. Sucheta really works to find a mid ground from where you are to get you where you would want to be and helps you reach your optimal point.",
   },
   {
-    name: "Nirupama R",
-    initials: "NR",
+    name: "Usha Babur",
+    initials: "UB",
     title: "A Blessing",
     content:
-      "Learning Kalaripayattu, the ancient martial art of India, in Dubai under Sachin Sir has been a true blessing. For me, starting this art later in life has reignited confidence and discipline.",
+      "I have thoroughly loved and enjoyed Sucheta's personal yoga sessions as they were specifically tailored to my health condition (Fibromyalgia) and catered to with absolute care & concern. It was not just a class but a holistic approach to mind body soul healing. Loved her soothing voice and her skill set combined.",
   },
 ];
 
 const WhispersWellnessPage = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -62,7 +62,7 @@ const WhispersWellnessPage = () => {
       <div className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
-          <h1 className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#A97375] text-center">
+          <h1 className="text-2xl 2xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold mb-5 text-[#B15D6E] text-center">
             Whispers of Wellness
           </h1>
 
@@ -78,7 +78,7 @@ const WhispersWellnessPage = () => {
 
             {/* Right Side - Testimonials Slider */}
             <div className="flex justify-center">
-              <div className="w-full max-w-md">
+              <div className="w-full max-w-md md:max-w-2xl">
                 <Slider {...settings}>
                   {testimonials.map((t, i) => (
                     <div key={i}>

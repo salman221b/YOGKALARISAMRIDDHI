@@ -31,7 +31,7 @@ const YogaFooter = () => {
                 href="https://youtube.com/@yogkalarisamriddhi?si=MQ0ASPrUvkQEgwl1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#FF0000] transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#78756D] transition-colors duration-300 flex-shrink-0"
                 aria-label="YouTube"
               >
                 <svg
@@ -48,7 +48,7 @@ const YogaFooter = () => {
                 href="https://www.instagram.com/yogkalarisamriddhi?igsh=Z2ZsajluODg2c2Vh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#E1306C] transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#78756D] transition-colors duration-300 flex-shrink-0"
                 aria-label="Instagram"
               >
                 <svg
@@ -65,7 +65,7 @@ const YogaFooter = () => {
                 href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#25D366] transition-colors duration-300 flex-shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-black rounded-lg flex items-center justify-center hover:bg-[#78756D] transition-colors duration-300 flex-shrink-0"
                 aria-label="WhatsApp"
               >
                 <svg

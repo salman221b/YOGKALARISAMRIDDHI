@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const cards = [
   {
     title: "Yoga Therapy",
-    subtitle: "corporate yoga | private yoga | yoga workshop",
+    subtitle: "Corporate yoga | Private yoga | Yoga workshop",
     description:
       "Traditional yoga for real-life healing. Breath, gentle movement and deep rest ease pain, steady hormones and calm a wired mind. Tailored one-to-one care—quiet, attentive, effective—for women navigating burnout, cycles and stress. Private sessions and select workplace programs for those who value depth over trends.",
     image:
@@ -13,7 +13,7 @@ const cards = [
   },
   {
     title: "Kalaripayattu - Martial Arts",
-    subtitle: "Group classes | Private class | kalaripayattu workshops",
+    subtitle: "Group classes | Private class | Kalaripayattu workshops",
     description:
       "India’s classical warrior art—taught with discipline and care. Flowing Kalari sequences build strength, agility and focus while cultivating humility and discipline. Beginners, adults and kids welcome. Join a small group or book private training to move with grounded power.",
     image:

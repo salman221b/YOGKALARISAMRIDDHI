@@ -13,11 +13,11 @@ const testimonials = [
       "My son and daughter have been attending Kalari lessons for the past two years @YogKalariSamriddhi, and the experience has been phenomenal. They have developed a strong physique and improved concentration levels. These lessons have significantly boosted their performance in sports and academics.",
   },
   {
-    name: "Dilipkumar Sasidharan",
-    initials: "DS",
+    name: "Apurva Sarin",
+    initials: "AS",
     title: "Impressive Growth",
     content:
-      "My child is really enjoying his Kaleri with his master. He didn’t have any base in the beginning but he really improved a lot. Thanks to Sachin Master.",
+      "I am so glad I took this hormone reset workshop. There was so much to learn and I felt absolutely rejuvenated after the abhyas and breath work. Sucheta is an amazing instructor and person! Really understands the pulse of her students. ❤",
   },
   {
     name: "Ahana Mehta",
@@ -27,24 +27,24 @@ const testimonials = [
       "Children love doing it, it has improved their flexibility and focus and is good for strengthening their body.",
   },
   {
-    name: "Nethra Gneshan",
-    initials: "NG",
+    name: "Sulbha",
+    initials: "S",
     title: "Strong & Focused",
     content:
-      "I’ve been learning Kalaripayattu with Sachin Gurukkal for about 4 years now, and it’s been an incredible experience. His deep knowledge and skill in Kalari make every class both challenging and rewarding.",
+      "The quality of Samriddhi Terrariums is excellent and truly value for money. It’s been about 6 months since I got my Buddha Arama, and the plants are thriving beautifully. I absolutely love them and have even started actively gifting them to my friends and family. Every time I look at one, it brings a smile to my face.",
   },
   {
-    name: "Nirupama R",
-    initials: "NR",
+    name: "Usha Babur",
+    initials: "UB",
     title: "A Blessing",
     content:
-      "Learning Kalaripayattu, the ancient martial art of India, in Dubai under Sachin Sir has been a true blessing. For me, starting this art later in life has reignited confidence and discipline.",
+      "“I have thoroughly loved and enjoyed Sucheta's personal yoga sessions as they were specifically tailored to my health condition (Fibromyalgia) and catered to with absolute care & concern. It was not just a class but a holistic approach to mind body soul healing. Loved her soothing voice and her skill set combined.",
   },
 ];
 
 const WhispersWellnessPage = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -77,7 +77,7 @@ const WhispersWellnessPage = () => {
 
             {/* Right Side - Testimonials Slider */}
             <div className="flex justify-center">
-              <div className="w-full max-w-md">
+              <div className="w-full max-w-md md:max-w-2xl">
                 <Slider {...settings}>
                   {testimonials.map((t, i) => (
                     <div key={i}>

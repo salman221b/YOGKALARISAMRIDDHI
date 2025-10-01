@@ -45,7 +45,7 @@ const testimonials = [
 ];
 const BenefitsSection = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -85,7 +85,7 @@ const BenefitsSection = () => {
   return (
     <div className="bg-[#f8f5f1] px-6 md:px-16 py-12">
       {/* Benefits Heading */}
-      <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D] mb-8">
+      <h2 className="text-center text-2xl md:text-3xl  text-[#AA6246] mb-8">
         Benefits of Kalaripayattu
       </h2>
 
@@ -104,7 +104,7 @@ const BenefitsSection = () => {
 
       {/* Whispers of Wellness */}
       <div className="mt-10">
-        <h3 className="text-center text-2xl md:text-3xl font-nunito text-[#94563D] mb-6">
+        <h3 className="text-center text-2xl md:text-3xl  text-[#AA6246] mb-6">
           Whispers of Wellness
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -119,7 +119,7 @@ const BenefitsSection = () => {
 
           {/* Right Side - Testimonials Slider */}
           <div className="flex justify-center">
-            <div className="w-full max-w-md">
+            <div className="w-full max-w-md md:max-w-2xl">
               <Slider {...settings}>
                 {testimonials.map((t, i) => (
                   <div key={i}>

@@ -1,9 +1,12 @@
 import React from "react";
 const Trainer = () => {
   return (
-    <section className="py-16 px-6 sm:px-10 md:px-16 lg:px-24 font-sans">
+    <section
+      className="py-16 px-6 sm:px-10 md:px-16 lg:px-24"
+      id="trainer"
+    >
       {/* Section Title */}
-      <h2 className="text-center text-2xl md:text-3xl font-nunito text-[#A97375]">
+      <h2 className="text-center text-2xl md:text-3xl text-[#B15D6E]">
         Meet your Wellness Guide
       </h2>
 

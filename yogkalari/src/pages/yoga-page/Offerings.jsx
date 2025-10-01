@@ -32,12 +32,11 @@ const Offerings = () => {
   return (
     <section className="bg-[#EDEAE0] py-16 px-6 sm:px-10 md:px-16 lg:px-24 text-center">
       {/* Title */}
-      <h2 className="text-2xl md:text-3xl font-nunito text-[#A97375]">
+      <h2 className="text-2xl md:text-3xl text-[#A97375]">
         Offerings
       </h2>
       <p
         className="text-gray-600 mt-2 mx-auto text-sm sm:text-base mb-7"
-        style={{ fontFamily: "Nunito, sans-serif" }}
       >
         Based in Dubai. (Classes offered in select locations. Contact us to
         explore starting a group near you.)
@@ -63,13 +62,11 @@ const Offerings = () => {
             <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-6">
               <h3
                 className="text-xl font-semibold text-gray-900"
-                style={{ fontFamily: "Nunito, sans-serif" }}
               >
                 {card.title}
               </h3>
               <p
                 className="text-gray-600 text-sm mt-3 leading-relaxed"
-                style={{ fontFamily: "Nunito, sans-serif" }}
               >
                 {card.description}
               </p>
@@ -79,13 +76,11 @@ const Offerings = () => {
             <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
               <h3
                 className="text-white text-lg font-semibold"
-                style={{ fontFamily: "Nunito, sans-serif" }}
               >
                 {card.title}
               </h3>
               <p
                 className="text-white text-sm mt-3 leading-relaxed"
-                style={{ fontFamily: "Nunito, sans-serif" }}
               >
                 {card.description}
               </p>

@@ -1,27 +1,26 @@
 import React from "react";
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center py-16">
+    <section
+      className="relative flex flex-col items-center justify-center pt-16 lg:py-16"
+      style={{
+        background:
+          "linear-gradient(to bottom, #96293fff 0%, #B15D6E 30%, #de8597ff 60%, #fbfaf8ff 90%, #F6F3EB 99%)",
+      }}
+    >
       {/* Title */}
-      <h1
-        className=" text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#A97375]"
-        style={{
-          fontFamily: "Josefin Sans, sans-serif",
-          letterSpacing: "0.1em",
-        }}
-      >
+      <h1 className="font-primary text-2xl 2xs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl 5xl:text-9xl pt-15 text-center font-semibold text-[#F6F3EB]">
         YOGA THERAPY
       </h1>
-
       {/* Subtitle */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-700 text-center z-10 mt-3 px-4 md:px-0">
+      <p className="text-sm sm:text-base md:text-lg text-white text-center z-10 mt-3 px-4 md:px-0">
         Personalized practice. Rooted in śāstra. Designed for your healing.
       </p>
-
       {/* Large Faded Background Text */}
-      <h1 className="absolute text-[12vw] sm:text-[10vw] md:text-[8vw] font-extrabold text-gray-200 opacity-70 top-85">
-        YOGA THERAPY
-      </h1>
+      <img
+        src="logo.png"
+        className="absolute xs:h-50 xs:w-50 sm:h-80 sm:w-80 md:h-100 md:w-100 opacity-20 lg:h-150 lg:w-150 xl:w-200 xl:h-200 left-[-300px] sm:left-[-300px] lg:left-[-400px]"
+      />
 
       {/* Image */}
       <div className="mt-6">

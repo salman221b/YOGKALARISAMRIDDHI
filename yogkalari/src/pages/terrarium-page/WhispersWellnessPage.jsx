@@ -6,45 +6,45 @@ import { Star } from "lucide-react"; // for star icons
 
 const testimonials = [
   {
-    name: "Nishad Somanathan",
-    initials: "NS",
-    title: "A Transformative Experience",
+    name: "Maria",
+    initials: "M",
+    title: "Thoughtful Gift",
     content:
-      "My son and daughter have been attending Kalari lessons for the past two years @YogKalariSamriddhi, and the experience has been phenomenal. They have developed a strong physique and improved concentration levels. These lessons have significantly boosted their performance in sports and academics.",
+      "I gifted the Turtle Ankur to my parents and they loved it instantly. The little turtle inside feels so meaningful — steady and protective. They were surprised how easy it is to maintain, the plants are still thriving months later with hardly any effort. It turned out to be such a thoughtful gift.",
   },
   {
-    name: "Dilipkumar Sasidharan",
-    initials: "DS",
-    title: "Impressive Growth",
+    name: "Priya",
+    initials: "P",
+    title: "Feeling Peace",
     content:
-      "My child is really enjoying his Kaleri with his master. He didn’t have any base in the beginning but he really improved a lot. Thanks to Sachin Master.",
+      "My Buddha Sthira sits on my work desk and it’s like a small pause button for me. Even on stressful days, just looking at it helps me breathe better. It’s been over 5 months and I’ve watered it only twice — somehow it just looks after itself.",
   },
   {
-    name: "Ahana Mehta",
-    initials: "AM",
-    title: "Loved by the Kids",
+    name: "Vivek",
+    initials: "V",
+    title: "Welcoming Feel",
     content:
-      "Children love doing it, it has improved their flexibility and focus and is good for strengthening their body.",
+      "The Brass Ganesha Ārāma was my housewarming gift to myself. The glow of Ganesha with the green backdrop looks stunning and gives a very welcoming feel. It feels both auspicious and stylish, the perfect start to a new home.",
   },
   {
-    name: "Nethra Gneshan",
-    initials: "NG",
-    title: "Strong & Focused",
+    name: "Amina",
+    initials: "A",
+    title: "Strong, Beauty & Protection.",
     content:
-      "I’ve been learning Kalaripayattu with Sachin Gurukkal for about 4 years now, and it’s been an incredible experience. His deep knowledge and skill in Kalari make every class both challenging and rewarding.",
+      "The Evil Eye Turtle Ārāma is the first thing people notice when they walk into my home. The bonsai has grown strong and it looks so unique, like a piece of art with meaning. I love that it carries both beauty and protection.",
   },
   {
-    name: "Nirupama R",
-    initials: "NR",
-    title: "A Blessing",
+    name: "Anjali",
+    initials: "A",
+    title: "A Energised Feel",
     content:
-      "Learning Kalaripayattu, the ancient martial art of India, in Dubai under Sachin Sir has been a true blessing. For me, starting this art later in life has reignited confidence and discipline.",
+      "The Shiva Ārāma terrarium sits in my puja room and honestly it adds a different energy. Every time I light the lamp, the calm face of Shiva with the greens behind feels like the space has come alive. It’s not just décor — it feels like prayer in a glass.",
   },
 ];
 
 const WhispersWellnessPage = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -61,7 +61,7 @@ const WhispersWellnessPage = () => {
       <div className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-[#2F5C4E] text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-[#084C2E] text-center">
             Whispers of Wellness
           </h1>
 
@@ -77,7 +77,7 @@ const WhispersWellnessPage = () => {
 
             {/* Right Side - Testimonials Slider */}
             <div className="flex justify-center">
-              <div className="w-full max-w-md">
+              <div className="w-full max-w-md md:max-w-2xl">
                 <Slider {...settings}>
                   {testimonials.map((t, i) => (
                     <div key={i}>

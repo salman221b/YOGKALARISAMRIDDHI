@@ -66,31 +66,19 @@ const HeroSection = () => {
 
       {/* Text Content */}
       <div className="max-w-5xl mx-2 sm:mx-5  md:mx-20 mt-12 px-6">
-        <h1
-          className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#084C2E] tracking-wide"
-          style={{
-            fontFamily: "Clash Display, sans-serif",
-          }}
-        >
+        <h1 className=" font-primary text-3xl sm:text-5xl md:text-6xl font-semibold text-[#084C2E] tracking-wide">
           SAMRIDDHI COLLECTIONS
         </h1>
-        <p
-          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify"
-          style={{ fontFamily: "IBM Plex Sans, sans-serif" }}
-        >
+        <p className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify">
           Each terrarium is handcrafted by Sachin Gurukkal, carrying the focused{" "}
-          <span className="italic">prāṇa</span> of an ancient warrior tradition.
-          Every piece is a miniature sacred grove, built to hold space, regulate
-          energy, and invite presence.
+          prāṇa of an ancient warrior tradition. Every piece is a miniature
+          sacred grove, built to hold space, regulate energy, and invite
+          presence.
         </p>
-        <p
-          className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify"
-          style={{ fontFamily: "IBM Plex Sans, sans-serif" }}
-        >
+        <p className="mt-4 text-gray-700 leading-relaxed text-base sm:text-sm md:text-lg lg:text-lg  text-justify">
           They are not decorative items — they are ritual companions. Designed
-          around the <span className="italic">pañca mahābhūtas</span>, they work
-          silently to harmonize your space through breath, stillness, and rooted
-          earth energy.
+          around the pañca mahābhūtas, they work silently to harmonize your
+          space through breath, stillness, and rooted earth energy.
         </p>
       </div>
       <ProductCard />

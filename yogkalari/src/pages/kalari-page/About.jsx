@@ -6,13 +6,10 @@ const KalaripayattuDetails = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-nunito text-[#94563D]">
-            Kalaripayattu
-          </h2>
-          <p className="text-[#94563D] italic mt-2 text-lg">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#AA6246]">
             "देहस्य विजय आत्मानः जयः"
-          </p>
-          <p className="text-gray-400 italic mb-4">
+          </h2>
+          <p className="text-[#AA6246] mb-4">
             Victory over the body is victory over the Self.
           </p>
 
@@ -66,47 +63,47 @@ const KalaripayattuDetails = () => {
 
         {/* Right Content */}
         <div className="sm:order-2">
-          <h3 className="text-3xl md:text-4xl font-nunito text-[#94563D]">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#AA6246] pt-10">
             What Kalari builds
           </h3>
           <ul className="mt-4 space-y-3 text-gray-700">
             <li>
               <strong>
                 {" "}
-                <span className="text-[#94563D]">Śarīra niyantraṇa: </span>
+                <span className="text-[#AA6246]">Śarīra niyantraṇa: </span>
               </strong>{" "}
               physical control and coordination
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#94563D]">Śvāsa sādhanā: </span>
+                <span className="text-[#AA6246]">Śvāsa sādhanā: </span>
               </strong>{" "}
-               breath training and focus
+              breath training and focus
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#94563D]">Bala & dhṛtā:</span>
+                <span className="text-[#AA6246]">Bala & dhṛtā:</span>
               </strong>{" "}
-               strength, stamina, and grounded power
+              strength, stamina, and grounded power
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#94563D]">Manas shithilī: </span>
+                <span className="text-[#AA6246]">Manas shithilī: </span>
               </strong>{" "}
-               mental clarity, discipline, and stillness
+              mental clarity, discipline, and stillness
             </li>
             <li>
               <strong>
                 {" "}
-                <span className="text-[#94563D]">Aṅga śuddhi: </span>
+                <span className="text-[#AA6246]">Aṅga śuddhi: </span>
               </strong>{" "}
-               fluid body awareness and injury prevention
+              fluid body awareness and injury prevention
             </li>
           </ul>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-700 pb-5">
             From dynamic movement sequences (<em>Meipayattu</em>) to breath-led
             transitions and eventually weapon forms — Kalari trains the body,
             breath, and being together.
@@ -117,35 +114,43 @@ const KalaripayattuDetails = () => {
       {/* Who Is It For Section */}
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
-       <div>
-  <h3 className="text-3xl md:text-4xl font-semibold text-[#94563D]">
-    Who is it for
-  </h3>
-  <div className="mt-6 space-y-6 text-gray-700 leading-relaxed">
-    <p>
-      <span className="font-semibold text-[#94563D]">Children & Teenagers:</span>{" "}
-      Build śarīra niyantraṇa (body discipline) and manas sthiratā (mental steadiness).
-      Kalari sharpens focus, fosters respect, and nurtures quiet confidence beyond academics.
-    </p>
-    <p>
-      <span className="font-semibold text-[#94563D]">Adults:</span>{" "}
-      Strength with humility, flow with resilience. Women discover empowerment and grace;
-      men develop stamina and composure. For all, Kalari is abhyāsa—a steady discipline
-      that grounds body and mind.
-    </p>
-    <p>
-      <span className="font-semibold text-[#94563D]">Professionals & Entrepreneurs:</span>{" "}
-      In Dubai’s fast pace, Kalari offers a reset. Breath-led movements sharpen focus,
-      release tension, and cultivate leadership through patience, clarity, and inner balance.
-    </p>
-    <p>
-      <span className="font-semibold text-[#94563D]">Seekers of Tradition & Depth:</span>{" "}
-      More than martial practice, Kalari is a living heritage. Rooted in temple kshetras
-      and passed through lineage, it blends movement, breath, and awareness—ancient yet timeless.
-    </p>
-  </div>
-</div>
-
+        <div>
+          <h3 className="text-3xl md:text-4xl font-semibold text-[#AA6246]">
+            Who is it for
+          </h3>
+          <div className="mt-6 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              <span className="font-semibold text-[#AA6246]">
+                Children & Teenagers:
+              </span>{" "}
+              Build śarīra niyantraṇa (body discipline) and manas sthiratā
+              (mental steadiness). Kalari sharpens focus, fosters respect, and
+              nurtures quiet confidence beyond academics.
+            </p>
+            <p>
+              <span className="font-semibold text-[#AA6246]">Adults:</span>{" "}
+              Strength with humility, flow with resilience. Women discover
+              empowerment and grace; men develop stamina and composure. For all,
+              Kalari is abhyāsa—a steady discipline that grounds body and mind.
+            </p>
+            <p>
+              <span className="font-semibold text-[#AA6246]">
+                Professionals & Entrepreneurs:
+              </span>{" "}
+              In Dubai’s fast pace, Kalari offers a reset. Breath-led movements
+              sharpen focus, release tension, and cultivate leadership through
+              patience, clarity, and inner balance.
+            </p>
+            <p>
+              <span className="font-semibold text-[#AA6246]">
+                Seekers of Tradition & Depth:
+              </span>{" "}
+              More than martial practice, Kalari is a living heritage. Rooted in
+              temple kshetras and passed through lineage, it blends movement,
+              breath, and awareness—ancient yet timeless.
+            </p>
+          </div>
+        </div>
 
         {/* Right Image */}
         <div>
@@ -159,7 +164,7 @@ const KalaripayattuDetails = () => {
 
       {/* Footer Tagline */}
       <div className="mt-16 text-center">
-        <h4 className="text-xl md:text-2xl font-semibold font-nunito text-[#94563D]">
+        <h4 className="text-xl md:text-2xl font-semibold text-[#AA6246]">
           Ancient lineage. Modern energy
         </h4>
         <p className="mt-2 text-gray-700 max-w-2xl mx-auto">
