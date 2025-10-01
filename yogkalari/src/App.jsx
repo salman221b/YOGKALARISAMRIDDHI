@@ -14,11 +14,21 @@ import ProductDetails from "./pages/terrarium-page/ProductDetails";
 import Maintenance from "./components/Maintenance";
 
 const App = () => {
-  const launchDate = new Date("2025-10-01T09:00:00").getTime();
-  const now = new Date().getTime();
+  const launchDate = new Date("2025-10-02T07:30:00").getTime();
+  const [now, setNow] = useState(new Date().getTime());
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // update "now" every second
+    const timer = setInterval(() => {
+      setNow(new Date().getTime());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    // fake loading splash for 2s
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
