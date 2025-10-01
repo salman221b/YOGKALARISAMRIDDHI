@@ -53,7 +53,7 @@ const FounderCards = () => {
                 <p className="text-gray-600 text-sm mt-2 leading-relaxed">
                   {founder.description}
                 </p>
-                <p className="mt-3 text-green-700 font-medium hover:underline">
+                <p className="mt-3 text-green-700 font-medium hover:underline text-center">
                   Know More
                 </p>
               </div>
