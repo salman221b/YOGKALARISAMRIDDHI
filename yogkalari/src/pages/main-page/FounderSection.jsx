@@ -34,17 +34,18 @@ const FounderCards = () => {
             key={index}
             className="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.03]"
           >
-            {/* Founder Image */}
-            <div className="overflow-hidden group-hover:h-full">
-              <img
-                src={founder.image}
-                alt={founder.name}
-                className="w-full h-full object-cover transition-all duration-500 md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 "
-              />
-            </div>
-
-            {/* Content (Before Hover) */}
             <HashLink smooth to={founder.link}>
+              {/* Founder Image */}
+              <div className="overflow-hidden group-hover:h-full">
+                <img
+                  src={founder.image}
+                  alt={founder.name}
+                  className="w-full h-full object-cover transition-all duration-500 md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105 "
+                />
+              </div>
+
+              {/* Content (Before Hover) */}
+
               <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {founder.name}
