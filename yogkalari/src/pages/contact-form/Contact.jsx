@@ -135,7 +135,7 @@ const ContactForm = () => {
                     href="mailto:info@yogkalarisamriddhi.com"
                     className="text-base hover:underline"
                   >
-                   info@yogkalarisamriddhi.com
+                    info@yogkalarisamriddhi.com
                   </a>
                 </div>
               </div>
@@ -202,8 +202,8 @@ const ContactForm = () => {
                           name="whatsappCountry"
                           value={formData.whatsappCountry}
                           onChange={handleChange}
-                          className="px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
-                          style={{ width: "110px" }}
+                          className="w-25 md:w-30 px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                          // style={{ width: "110px" }}
                         >
                           <option value="+971">🇦🇪 (+971)</option>
                           <option value="+91">🇮🇳 (+91)</option>
@@ -217,7 +217,7 @@ const ContactForm = () => {
                           placeholder="Enter number"
                           value={formData.whatsapp}
                           onChange={handleChange}
-                          className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
+                          className="flex-1 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800"
                         />
                       </div>
                       {errors.whatsapp && (
@@ -265,8 +265,7 @@ const ContactForm = () => {
           </div>
         </div>
       </section>
-      
-        <MarqueeBanner />{" "}
+      <MarqueeBanner />{" "}
     </>
   );
 };
