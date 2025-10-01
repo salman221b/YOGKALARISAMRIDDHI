@@ -14,7 +14,7 @@ import ProductDetails from "./pages/terrarium-page/ProductDetails";
 import Maintenance from "./components/Maintenance";
 
 const App = () => {
-  const launchDate = new Date("2025-10-02T09:00:00").getTime();
+  const launchDate = new Date("2025-10-01T09:00:00").getTime();
   const now = new Date().getTime();
   const [loading, setLoading] = useState(true);
 
