@@ -65,7 +65,7 @@ const HeroSection = () => {
       </div>
 
       {/* Text Content */}
-      <div className="max-w-5xl mx-2 sm:mx-5  md:mx-20 mt-12 px-6">
+      <div className="max-w-5xl mx-2 sm:mx-5  md:mx-5 mt-12 px-6">
         <h1 className=" font-primary text-3xl sm:text-5xl md:text-6xl font-semibold text-[#084C2E] tracking-wide">
           SAMRIDDHI COLLECTIONS
         </h1>

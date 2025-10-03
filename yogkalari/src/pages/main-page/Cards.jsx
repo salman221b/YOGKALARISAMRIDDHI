@@ -34,7 +34,7 @@ const cards = [
 const ServiceCards = () => {
   return (
     <div className="bg-[#f8f5eb] flex flex-col items-center mb-20 px-6">
-      <h2 className="text-3xl font-semibold text-green-900 mb-10 text-center">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#084C2E] mb-10 text-center">
         Sanctuary for Reconnection
       </h2>
 
@@ -43,33 +43,31 @@ const ServiceCards = () => {
           <Link
             key={index}
             to={card.link}
-            className="group relative bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl"
+            className="group relative bg-[#F4F2ED] rounded-2xl shadow-sm overflow-hidden transition-all duration-500 hover:shadow-2xl"
           >
             {/* Image */}
             <div className="relative overflow-hidden group-hover:h-full">
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-full object-cover rounded-t-2xl transition-all duration-700 ease-in-out md:grayscale group-hover:grayscale-0 group-hover:h-full"
+                className="w-full h-full object-cover p-3 hover:p-0 rounded-3xl transition-all duration-700 ease-in-out md:grayscale group-hover:grayscale-0 group-hover:h-full"
               />
             </div>
 
             {/* Normal Content */}
             <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-6">
-              <h3 className="text-xl font-semibold text-gray-900">
-                {card.title}
-              </h3>
-              <p className="text-green-700 text-sm mt-1">{card.subtitle}</p>
-              <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+              <h3 className="text-xl font-semibold">{card.title}</h3>
+              <p className="text-[#084C2E] text-sm mt-1">{card.subtitle}</p>
+              <p className="text-[#555555] text-sm mt-3 leading-relaxed">
                 {card.description}
               </p>
             </div>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
+            <div className="absolute bottom-0 left-0 w-full bg-[#084C2E] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-90 transition-all duration-500 flex flex-col items-center">
               <h3 className="text-white text-lg font-semibold">{card.title}</h3>
               <p className="text-white text-sm mt-1">{card.subtitle}</p>
-              <span className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <span className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-[#2F5E4E]  transition-all duration-300">
                 Know more
               </span>
             </div>

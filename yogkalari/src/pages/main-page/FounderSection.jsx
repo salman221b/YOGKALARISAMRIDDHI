@@ -23,8 +23,8 @@ const founders = [
 
 const FounderCards = () => {
   return (
-    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center mb-10 px-6">
-      <h2 className="text-3xl font-semibold text-green-900 mb-10 text-center">
+    <div className="bg-[#f8f5eb] min-h-screen flex flex-col items-center mb-20 md:mb-0 px-6">
+      <h2 className="text-3xl md:text-4xl  font-semibold text-[#084C2E] mb-10 text-center">
         Meet the Founders
       </h2>
 
@@ -32,7 +32,7 @@ const FounderCards = () => {
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.03]"
+            className="group relative bg-[#F4F2ED] rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.03]"
           >
             <HashLink smooth to={founder.link}>
               {/* Founder Image */}
@@ -47,21 +47,19 @@ const FounderCards = () => {
               {/* Content (Before Hover) */}
 
               <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {founder.name}
-                </h3>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                <h3 className="text-2xl font-semibold">{founder.name}</h3>
+                <p className=" text-sm mt-2 leading-relaxed">
                   {founder.description}
                 </p>
-                <p className="mt-3 text-green-700 font-medium hover:underline text-center">
+                <p className="mt-3 text-[#084C2E] font-medium hover:underline text-center sm:hidden">
                   Know More
                 </p>
               </div>
             </HashLink>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center">
-              <h3 className="text-white text-lg font-semibold">
+            <div className="absolute bottom-0 left-0 w-full bg-[#084C2E] backdrop-blur-sm p-5 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col items-center">
+              <h3 className="text-white text-2xl font-semibold">
                 {founder.name}
               </h3>
               <HashLink

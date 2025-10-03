@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-white fixed w-full z-30 bg-[rgba(246,243,235)] backdrop-blur-md py-1">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-5 xl:px-0 2xl:px-0 ">
         <div className="flex justify-between items-center h-16">
           {/* Left - Logo */}
           <Link to="/" className="cursor-pointer">
@@ -29,8 +29,8 @@ const Navbar = () => {
 
           {/* Middle - Desktop Links */}
           <ul
-            className="hidden lg:flex space-x-8 text-lg bg-[#E3DECF] px-20 py-3 rounded-full"
-            style={{ height: "50px" }}
+            className="hidden lg:flex space-x-8 text-sm bg-[#E3DECF] px-20 py-3 rounded-full"
+            style={{ height: "44px" }}
           >
             {links.map((link) => (
               <li key={link.path}>
@@ -39,8 +39,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`transition ${
                     location.pathname === link.path
-                      ? "text-[#2F5C4E] underline"
-                      : "text-black hover:text-[#2F5C4E]"
+                      ? "text-[#084C2E] underline underline-offset-5"
+                      : "text-[#1C1C1B] hover:text-[#084C2E] hover:bg-[#EDEAE0] "
                   }`}
                 >
                   <span>{link.label}</span>
@@ -55,7 +55,7 @@ const Navbar = () => {
               href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
+              className="bg-[#084C2E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-[#0A7646] transition text-white"
             >
               <FaWhatsapp className="text-xl" />
               <span>Let's Chat</span>
@@ -86,11 +86,11 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className={`transition ${
               location.pathname === link.path
-                ? "text-[#2F5C4E] underline"
-                : "text-black hover:text-[#2F5C4E]"
+                ? "text-[#084C2E] underline"
+                : "text-black hover:text-[#084C2E]"
             }`}
           >
-            <span className="font-nunito font-normal">{link.label}</span>
+            <span className="font-normal">{link.label}</span>
           </Link>
         ))}
 
@@ -99,7 +99,7 @@ const Navbar = () => {
           href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#2F5C4E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-black transition text-white"
+          className="bg-[#084C2E] flex items-center gap-2 px-5 py-2 rounded-3xl font-semibold hover:bg-[#0A7646] transition text-white"
         >
           <FaWhatsapp className="text-xl" />
           <span>Let's Chat</span>

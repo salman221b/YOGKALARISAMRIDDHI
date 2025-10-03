@@ -7,10 +7,11 @@
   }
   50% {
     transform: scale(2.3);
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1);
+    transform: scale(2.5);
+    opacity: 1;
   }
 }
 
@@ -41,5 +42,6 @@
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  color: #1c1c1b;
 }
 

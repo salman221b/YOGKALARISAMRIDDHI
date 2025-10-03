@@ -88,10 +88,10 @@ const KalaripayattuDetails = () => {
 
         {/* Right Content */}
         <div className="sm:order-2">
-          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#B15D6E] font-semibold">
+          <h2 className="text-3xl md:text-4xl lg:text-[32px] text-[#B15D6E] font-semibold pt-10 md:pt-0">
             We support clients with
           </h2>
-          <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside pb-10">
+          <ul className="mt-3 space-y-3 text-gray-700 list-disc list-inside pb-10">
             <li>
               Hormonal health (PCOS, perimenopause, thyroid, menstrual
               irregularities)

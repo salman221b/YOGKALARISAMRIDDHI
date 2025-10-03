@@ -88,7 +88,7 @@ const YogaFooter = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Home
                 </Link>
@@ -96,7 +96,7 @@ const YogaFooter = () => {
               <li>
                 <Link
                   to="/yoga"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Yoga
                 </Link>
@@ -104,7 +104,7 @@ const YogaFooter = () => {
               <li>
                 <Link
                   to="/kalari"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Kalari
                 </Link>
@@ -112,7 +112,7 @@ const YogaFooter = () => {
               <li>
                 <Link
                   to="/terrariums"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Terrariums
                 </Link>
@@ -129,7 +129,7 @@ const YogaFooter = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Contact Us
                 </Link>
@@ -152,7 +152,7 @@ const YogaFooter = () => {
                   href={TnC}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   Privacy & Policy
                 </a>
@@ -162,7 +162,7 @@ const YogaFooter = () => {
                   href={FAQs}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-amber-700 transition-colors text-sm block"
+                  className="text-gray-600 hover:text-[#084C2E] transition-colors text-sm block"
                 >
                   FAQ
                 </a>

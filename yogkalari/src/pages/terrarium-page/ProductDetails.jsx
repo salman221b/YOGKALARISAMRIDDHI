@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { products } from "../../data/products";
 import Marquee from "./Marquee2";
 import ScrollToTop from "../../components/ScrollToTop";
@@ -17,8 +17,10 @@ const ProductDetails = () => {
 
   return (
     <section className="py-10 pt-30">
-      <div className="text-sm text-gray-500 mb-6 px-26">
-        Home &gt; Terrariums &gt; <span className="text-gray-800">Product</span>
+      <div className="text-sm text-gray-500 mb-6 px-26 pl-5 md:px-20 lg:pl-20 2xl:pl-40">
+        <Link to="/">Home </Link> &gt;
+        <Link to="/terrariums">Terrariums </Link> &gt;{" "}
+        <span className="text-gray-800">Product</span>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
         {/* Left: Product Images */}

@@ -61,7 +61,7 @@ const WhispersWellnessPage = () => {
       <div className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-[#2F5C4E] text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-[#084C2E] text-center">
             Whispers of Wellness
           </h1>
 
@@ -81,38 +81,36 @@ const WhispersWellnessPage = () => {
                 <Slider {...settings}>
                   {testimonials.map((t, i) => (
                     <div key={i}>
-                      <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                      <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 w-full h-[380px] md:h-[300px] flex flex-col justify-between">
                         {/* Quotation mark */}
                         <div className=" text-[#2F5C4E] mb-3">
                           <img
                             src="/quotes.png"
                             alt="Quotation Mark"
-                            className="w-6 h-6"
+                            className="w-10 h-10"
                           />
                         </div>
 
                         {/* Title */}
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        <h3 className="text-lg font-semibold mb-2">
                           {t.title}
                         </h3>
 
                         {/* Content */}
-                        <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                        <p className=" text-sm leading-relaxed mb-6">
                           {t.content}
                         </p>
 
                         {/* Footer */}
                         <div className="flex items-center gap-3">
                           {/* Avatar */}
-                          <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-semibold text-gray-700">
+                          <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-semibold ">
                             {t.initials}
                           </div>
 
                           {/* Name + Stars */}
                           <div>
-                            <p className="font-medium text-gray-800">
-                              {t.name}
-                            </p>
+                            <p className="font-medium">{t.name}</p>
                             <div className="flex text-yellow-500">
                               {[...Array(5)].map((_, idx) => (
                                 <Star
@@ -134,7 +132,7 @@ const WhispersWellnessPage = () => {
       </div>
 
       {/* Bottom CTA Section */}
-      <div className="bg-[#084C2E] py-10 px-6">
+      <div className="bg-[#084C2E] py-13 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Ready to Begin Your Wellness Journey?

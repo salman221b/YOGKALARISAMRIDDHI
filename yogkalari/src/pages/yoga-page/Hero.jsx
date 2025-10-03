@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Image */}
       <div className="mt-6">
         <img
-          src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1756892114/aeffb542f63ec1d7f28a8ed2a55db40171deeea5_fxpm2p.png"
+          src="https://res.cloudinary.com/dpjfm1pha/image/upload/v1759467162/1d2bf6558fe862ad5672b569315fc7a1789da629_1_iykckn.png"
           alt="YOGA THERAPY"
           className="w-[500px] sm:w-[550px] md:w-[650px] lg:w-[700px] relative z-20"
         />

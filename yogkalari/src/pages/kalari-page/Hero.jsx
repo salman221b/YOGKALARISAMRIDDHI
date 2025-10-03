@@ -3,10 +3,10 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="relative flex flex-col justify-center py-16 pt-180 bg-cover bg-center bg-no-repeat"
+      className="relative flex flex-col justify-center py-16 pt-190 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/dpjfm1pha/image/upload/v1759311133/ca6eb6e9dec4cb936719d36d637b96a76bda0fa5_aceimh.jpg')",
+          "url('https://res.cloudinary.com/dpjfm1pha/image/upload/v1759482962/ca6eb6e9dec4cb936719d36d637b96a76bda0fa5_aceimh_ca4893.jpg')",
       }}
     >
       {/* Optional overlay for better text readability */}
