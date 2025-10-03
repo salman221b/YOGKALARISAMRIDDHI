@@ -103,7 +103,7 @@ const ProductDetails = () => {
               href={`https://wa.me/971563440979?text=Hello, I am enquiring about the product *${product.name}* priced at *${product.price}*. Can you share more details?`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-800 text-white px-8 py-3 rounded-full shadow hover:bg-green-900 inline-block text-center"
+              className="bg-[#084C2E] text-white px-8 py-3 rounded-full shadow hover:bg-[#0A7646] inline-block text-center"
             >
               Buy Now
             </a>
