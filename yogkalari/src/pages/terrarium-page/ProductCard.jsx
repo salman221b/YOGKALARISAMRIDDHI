@@ -34,7 +34,7 @@ const ProductCard = () => {
         <div className="mb-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
             <h1 className="text-3xl md:text-4xl font-bold text-[#084C2E]">
-              Tereriums
+              Terrariums
             </h1>
 
             {/* Search Bar */}
