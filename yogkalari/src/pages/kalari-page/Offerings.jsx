@@ -27,21 +27,17 @@ const cards = [
 
 const Offerings = () => {
   return (
-    <section className="bg-[#EDEAE0] py-16 px-6 sm:px-10 md:px-16 lg:px-24 text-center">
+    <section className="bg-[#EDEAE0] py-16 px-6 sm:px-10 md:px-16 lg:px-24 ">
       {/* Title */}
-      <h2 className="text-2xl md:text-3xl  text-[#AA6246]">
-        Offerings
-      </h2>
-      <p
-        className="text-gray-600 mt-2 mx-auto text-sm sm:text-base mb-7"
-      >
+      <h2 className="text-2xl md:text-3xl  text-[#AA6246]">Offerings</h2>
+      <p className="text-gray-600 mt-2 mx-auto text-sm sm:text-base mb-7">
         Based in Dubai. (Classes offered in select locations. Contact us to
         explore starting a group near you.)
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full lg:mx-auto">
         {cards.map((card, index) => (
-          <Link
+          <div
             key={index}
             to={card.link}
             className="group relative bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-2xl"
@@ -57,21 +53,26 @@ const Offerings = () => {
 
             {/* Normal Content */}
             <div className="p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-6">
-              <h3
-                className="text-xl font-semibold text-gray-900"
-              >
+              <h3 className="text-xl font-semibold text-gray-900">
                 {card.title}
               </h3>
-              <p
-                className="text-gray-600 text-sm mt-3 leading-relaxed"
-                style={{ fontFamily: "Nunito, sans-serif" }}
-              >
+              <p className="text-gray-600 text-sm mt-3 leading-relaxed">
                 {card.description}
               </p>
+              <div className="sm:hidden mt-4 text-center">
+                <a
+                  className="mt-4 border border-[#084C2E] text-[#084C2E] px-4 py-2 rounded-full transition-all duration-300 "
+                  href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-sm">Chat with Us</span>
+                </a>
+              </div>
             </div>
 
             {/* Hover Overlay */}
-            <div className="absolute bottom-0 left-0 w-full bg-[rgba(47,92,78,0.7)] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center">
+            <div className="absolute bottom-0 left-0 w-full bg-[#084C2E] backdrop-blur-sm px-5 py-6 opacity-0 group-hover:opacity-80 transition-all duration-500 flex flex-col items-center">
               <h3
                 className="text-white text-lg font-semibold"
                 style={{ fontFamily: "Nunito, sans-serif" }}
@@ -84,11 +85,16 @@ const Offerings = () => {
               >
                 {card.description}
               </p>
-              {/* <span className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
-                Know more
-              </span> */}
+              <a
+                className="mt-4 border border-white text-white px-4 py-2 rounded-full hover:bg-[#2F5E4E] transition-all duration-300"
+                href="https://wa.me/971563440979?text=Hi%20YogKalariSamriddhi,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm">Chat with Us</span>
+              </a>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </section>

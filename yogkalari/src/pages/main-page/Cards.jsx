@@ -61,6 +61,11 @@ const ServiceCards = () => {
               <p className="text-[#555555] text-sm mt-3 leading-relaxed">
                 {card.description}
               </p>
+              <div className="sm:hidden mt-4 text-center">
+                <a className="mt-4 border border-[#084C2E] text-[#084C2E] px-4 py-2 rounded-full transition-all duration-300 ">
+                  Know more
+                </a>
+              </div>
             </div>
 
             {/* Hover Overlay */}
