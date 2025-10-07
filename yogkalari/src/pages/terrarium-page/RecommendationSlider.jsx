@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const RecommendationSlider = ({ products }) => {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const updateSlides = () => {
+      const width = window.innerWidth;
+      if (width <= 480) setSlidesToShow(2);
+      else if (width <= 768) setSlidesToShow(2);
+      else if (width <= 1024) setSlidesToShow(3);
+      else setSlidesToShow(4);
+    };
+
+    updateSlides(); // run on mount
+    window.addEventListener("resize", updateSlides);
+
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
   };
 
   return (
@@ -28,7 +40,11 @@ const RecommendationSlider = ({ products }) => {
 
         <Slider {...settings}>
           {products.map((product) => (
-            <div key={product.id} className="px-3">
+            <div
+              key={product.id}
+              className="px-3"
+              onClick={() => navigate(`/products/${product.id}`)}
+            >
               <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all overflow-hidden">
                 <div className="relative w-full h-56 overflow-hidden">
                   <img

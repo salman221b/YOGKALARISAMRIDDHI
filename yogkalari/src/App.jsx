@@ -12,6 +12,7 @@ import ContactForm from "./pages/contact-form/Contact";
 import ScrollUp from "./components/ScrollUp";
 import ProductDetails from "./pages/terrarium-page/ProductDetails";
 import Maintenance from "./components/Maintenance";
+import Admin from "./pages/admin/Admin";
 
 const App = () => {
   const launchDate = new Date("2025-10-02T07:30:00").getTime();
@@ -61,8 +62,17 @@ const App = () => {
         <Route path="/yoga" element={<MainPage />} />
         <Route path="/terrariums" element={<TerrariumsPage />} />
         <Route path="/products/:id" element={<ProductDetails />} />
+        <Route
+          path="*"
+          element={
+            <h1 className="text-3xl font-bold w-full text-center pt-50 pb-100 text-[#084C2E] ">
+              404 Not Found
+            </h1>
+          }
+        />
 
         <Route path="/contact" element={<ContactForm />} />
+        <Route path="/adminpanel" element={<Admin />} />
       </Routes>
       <YogaFooter />
     </Router>
